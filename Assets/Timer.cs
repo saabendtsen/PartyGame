@@ -23,20 +23,32 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(timerRemaining);
-        if(timerRemaining > 0)
+
+        if (timerIsRunning == true)
         {
-            timerRemaining -= Time.deltaTime;
-            DisplayTime(timerRemaining);
-        }
-        else 
-        {
-            timerRemaining = 0;
-            timerIsRunning = false;
-            Time.timeScale = 0;
+            //Desplay time when time is running
+            
+
+            //When time is running
+            if (timerRemaining > 0)
+            {
+                timerRemaining -= Time.deltaTime;
+                DisplayTime(timerRemaining);
+            }
+
+            //When time is out
+            else
+            {
+                Debug.Log("Time has run out");
+                timerRemaining = 0;
+                DisplayTime(timerRemaining);
+                timerIsRunning = false;
+                Time.timeScale = 0;
+            }
         }
 
-        if(timerIsRunning == false && Input.GetKeyDown("return"))
+        //Reset scene when return is pressed
+        if (timerIsRunning == false && Input.GetKeyDown("return"))
         {
             SceneManager.LoadScene(GameName, LoadSceneMode.Single);
             timerIsRunning = true;
@@ -47,20 +59,21 @@ public class Timer : MonoBehaviour
 
     void DisplayTime(float timeToDisplay)
     {
-        if(timerIsRunning == true)
+        if (timerIsRunning == true)
         {
-            float minutes = Mathf.FloorToInt(timerRemaining/60);
-            float seconds = Mathf.FloorToInt(timerRemaining%60);
+            float minutes = Mathf.FloorToInt(timerRemaining / 60);
+            float seconds = Mathf.FloorToInt(timerRemaining % 60);
             float milliSeconds = (timeToDisplay % 1 * 1000);
-            timeText.text = string.Format("{0:00}:{1:00}:{2:000}",minutes,seconds,milliSeconds);
+            timeText.text = string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliSeconds);
         }
     }
 
     void OnGUI()
     {
-        if(timerIsRunning == false)
+      GUI.skin.box.fontSize = 30;
+        if (timerIsRunning == false)
         {
-            GUI.Box(new Rect(0,50,250,25), "Fuck you, press enter du restart");
+            GUI.Box(new Rect(0, 50, 500, 50), "Fuck you, press enter du restart");
         }
     }
 
