@@ -104,10 +104,10 @@ public class ProjectileScript : MonoBehaviour
         //Instantiate Bullet
         GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity); 
         //Rotate bullet to shoot direction
-        currentBullet.transform.forward = directionWithSpread.normalized;
+        currentBullet.transform.forward = directionWithoutSpread.normalized;
 
         //Add force to the bullet
-        currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
+        currentBullet.GetComponent<Rigidbody>().AddForce(directionWithoutSpread.normalized * shootForce, ForceMode.Impulse);
         currentBullet.GetComponent<Rigidbody>().AddForce(fpsCam.transform.up * upwardForce, ForceMode.Impulse);
          
         //Instantiate muzzle flash, if you have one
