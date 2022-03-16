@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMpro;
+using TMPro;
 
 public class ProjectileScript : MonoBehaviour
 {
@@ -62,7 +62,7 @@ public class ProjectileScript : MonoBehaviour
         else shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
         //Reloading
-        if(Input.GetKeyDown(keyCode.R) && bulletsLeft < magzineSize && !reloading) Reload();
+        if(Input.GetKeyDown(KeyCode.R) && bulletsLeft < magzineSize && !reloading) Reload();
         //Reload automatically when trying to shoot without ammo
         if(readyToShoot && shooting && !reloading && bulletsLeft <= 0) Reload();
 
@@ -107,8 +107,8 @@ public class ProjectileScript : MonoBehaviour
         currentBullet.transform.forward = directionWithSpread.normalized;
 
         //Add force to the bullet
-        currentBullet.GetComponent<RigidBody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
-        currentBullet.GetComponent<RigidBody>().AddForce(fpsCam.transform.up * upwardForce, ForceMode.Impulse);
+        currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
+        currentBullet.GetComponent<Rigidbody>().AddForce(fpsCam.transform.up * upwardForce, ForceMode.Impulse);
          
         //Instantiate muzzle flash, if you have one
         if (muzzleFlash != null)
@@ -128,7 +128,7 @@ public class ProjectileScript : MonoBehaviour
     private void ResetShot()
     {
         //Allow shooting and invoking again
-        readyToShoot = ready;
+        readyToShoot = true;
         allowInvoke = true;
     }
 
