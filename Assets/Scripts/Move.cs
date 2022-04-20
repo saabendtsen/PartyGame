@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class Move : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Move : MonoBehaviour
     {
         Roaming,
         ChaseTarget,
+        Attacking,
     }
     private NavMeshAgent agent;
     private Animator anim;
@@ -19,6 +21,15 @@ public class Move : MonoBehaviour
     private Vector3 targetDestination;
     private Vector3 playerPosition;
     private State state;
+
+    //Health
+    private int currentHealth = 100; 
+    private bool isDead = false;
+    [SerializeField] private HealthDisplay healthDisplay;
+
+    //AttackVar
+    public float timeBetweenAttacks;
+    private bool alreadAttacked;
 
     // Start is called before the first frame update
     void Start()
@@ -45,8 +56,17 @@ public class Move : MonoBehaviour
         //Set Enermy Speed
         anim.SetFloat("Speed", agent.speed);
 
-        //Set chase or roam
+        //Set chase or roam state
         CheckDistanceToPlayer();
+
+        //update health 
+        currentHealth = Mathf.Max(currentHealth, 0);
+        if(currentHealth < 0 )
+        {
+            OnDeath();
+        }
+        
+
 
         switch (state)
         {
@@ -62,15 +82,25 @@ public class Move : MonoBehaviour
             case State.ChaseTarget:
                 agent.SetDestination(playerPosition);
                 break;
+            case State.Attacking:
+                agent.SetDestination(transform.position);
+                transform.LookAt(playerPosition);
+                if(!alreadAttacked)
+                {
+                    ///Attach Code here
+                    alreadAttacked = true;
+                    Invoke(nameof(ResetAttack),timeBetweenAttacks);
+                }
+                break;
 
 
         }
-
-        
-
-
-
     }
+
+    private void ResetAttack()
+     {
+         alreadAttacked = false;
+     }
 
     private void FindNewTargetDestination()
     {
@@ -101,5 +131,19 @@ public class Move : MonoBehaviour
         {
             state = State.Roaming;
         }
+    }
+
+    private void OnDeath()
+    {
+        isDead = true;
+        var ragdoll = GetComponent<RagdollHandler>();
+        ragdoll.GoRagdoll(true);
+        GetComponent<NavMeshAgent>().isStopped = true;
+
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
     }
 }

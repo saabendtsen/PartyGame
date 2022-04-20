@@ -24,7 +24,6 @@ public class Health : MonoBehaviour
 
         OnDeath();
 
-        //Death test
         TakeDamage(5);
     }
 
