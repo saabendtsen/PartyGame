@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6661127813754028791}
   - component: {fileID: 6661127813754028789}
   - component: {fileID: 6661127813754028790}
+  - component: {fileID: 6404349750994055222}
   m_Layer: 0
   m_Name: WinterGuard
   m_TagString: Untagged
@@ -44,7 +45,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -87,6 +88,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6404349750994055222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661127813754028785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63c4667e9af22b4a9ba985ef4f761bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthDisplay: {fileID: 0}
 --- !u!1001 &6661127813334004580
 PrefabInstance:
   m_ObjectHideFlags: 0

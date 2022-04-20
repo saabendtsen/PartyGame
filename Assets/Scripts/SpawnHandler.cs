@@ -12,6 +12,7 @@ public int numberOfEnemies;
 
 public GameObject terrain;
 private BoxCollider col;
+private int activeEnermies;
 
 
     // Start is called before the first frame update
@@ -21,27 +22,29 @@ private BoxCollider col;
        tmp.transform.position = new Vector3(0.0f, tmp.transform.position.y, 0.0f);
        col = terrain.GetComponent<BoxCollider>();
 
-        GenerateObject(enemy, numberOfEnemies);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(activeEnermies<numberOfEnemies)
+        {
+            GenerateObject(enemy);
+        }
     }
 
-    void GenerateObject(GameObject go, int amount)
+    void GenerateObject(GameObject go)
     {
         if (go == null) return;
 
-        for(int i = 0; i < amount; i++)
-        {
+        
             GameObject tmp = Instantiate(go);
         
             Vector3 randomPoint = GetRandomPoint();
             tmp.gameObject.transform.position = new Vector3(randomPoint.x, 
             tmp.transform.position.y, randomPoint.z);
-        }
+            activeEnermies++;
 
     }
 
