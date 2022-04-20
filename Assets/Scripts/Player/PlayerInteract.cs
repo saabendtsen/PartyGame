@@ -13,6 +13,7 @@ public class PlayerInteract : MonoBehaviour {
     private LayerMask mask;
     private PlayerUI playerUI;
     private InputManager inputManager;
+    public static PlayerInteract Instance {get;private set;}
 
 
     void Start() {
