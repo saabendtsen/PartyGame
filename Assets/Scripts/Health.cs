@@ -23,6 +23,9 @@ public class Health : MonoBehaviour
         if (currentHealth > 0) return;
 
         OnDeath();
+
+        //Death test
+        TakeDamage(5);
     }
 
     private void OnDeath()

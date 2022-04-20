@@ -18,11 +18,11 @@ ObjectPool<enemy> _pool;
     // Start is called before the first frame update
     void Start()
     {
-       GameObject tmp = Instantiate(enemy);
+       //GameObject tmp = Instantiate(enemy);
        tmp.transform.position = new Vector3(0.0f, tmp.transform.position.y, 0.0f);
        col = terrain.GetComponent<BoxCollider>();
 
-       _pool = new ObjectPool<enemy>(GenerateObject,OntakeFromPool,OnReturnToPool);
+       _pool = new ObjectPool<SpawnHandler>(GenerateObject,OntakeFromPool,OnReturnToPool);
 
         
     }
@@ -65,12 +65,12 @@ ObjectPool<enemy> _pool;
         return new Vector3(xRandom, 0.0f, zRandom);
 }
 
-void OntakeFromPool(enemy enemy)
+void OntakeFromPool(SpawnHandler enemy)
 {
     enemy.gameObject.setActive(true);
     activeEnermies++;
 }
-void OnReturnToPool(enemy enemy)
+void OnReturnToPool(SpawnHandler enemy)
 {
     enemy.gameObject.setActive(false);
     activeEnermies--;
