@@ -5,74 +5,82 @@ using UnityEngine;
 
 public class SpawnHandler : MonoBehaviour
 {
+    public GameObject enemy;
 
-public GameObject enemy;
+    public int numberOfEnemies;
 
-public int numberOfEnemies;
+    public GameObject terrain;
 
-public GameObject terrain;
-private BoxCollider col;
-private int activeEnermies;
-ObjectPool<enemy> _pool;
+    private BoxCollider col;
+
+    private int activeEnermies;
+
+    ObjectPool<enemy> _pool;
+
+    public int InactiveCount;
+
+    public int ActiveCount;
 
     // Start is called before the first frame update
     void Start()
     {
-       //GameObject tmp = Instantiate(enemy);
-       tmp.transform.position = new Vector3(0.0f, tmp.transform.position.y, 0.0f);
-       col = terrain.GetComponent<BoxCollider>();
+        //GameObject tmp = Instantiate(enemy);
+        tmp.transform.position =
+            new Vector3(0.0f, tmp.transform.position.y, 0.0f);
+        col = terrain.GetComponent<BoxCollider>();
 
-       _pool = new ObjectPool<SpawnHandler>(GenerateObject,OntakeFromPool,OnReturnToPool);
-
-        
+        _pool =
+            new ObjectPool<enemy>(GenerateObject,
+                OntakeFromPool,
+                OnReturnToPool);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(activeEnermies<numberOfEnemies)
+        var enemy = _pool.Get();
+        InactiveCount = _pool.InactiveCount;
+        ActiveCount = _pool.ActiveCount;
+
+        if (activeEnermies < numberOfEnemies)
         {
-            GenerateObject(enemy);
+            GenerateObject();
         }
     }
 
-    void GenerateObject(GameObject go)
+    void GenerateObject()
     {
-        if (go == null) return;
+        GameObject tmp = Instantiate(enemy);
 
-        
-            GameObject tmp = Instantiate(go);
-        
-            Vector3 randomPoint = GetRandomPoint();
-            tmp.gameObject.transform.position = new Vector3(randomPoint.x, 
-            tmp.transform.position.y, randomPoint.z);
-            activeEnermies++;
-            go.SetPool(_pool);
+        Vector3 randomPoint = GetRandomPoint();
+        tmp.gameObject.transform.position =
+            new Vector3(randomPoint.x, tmp.transform.position.y, randomPoint.z);
+        activeEnermies++;
+        tmp.SetPool (_pool);
 
-            return go;
-
+        return tmp;
     }
 
-     Vector3 GetRandomPoint()
+    Vector3 GetRandomPoint()
     {
         int xRandom = 0;
         int zRandom = 0;
-        
-        
-        xRandom = (int)Random.Range(col.bounds.min.x, col.bounds.max.x);
-        zRandom = (int)Random.Range(col.bounds.min.z, col.bounds.max.z);
+
+        xRandom = (int) Random.Range(col.bounds.min.x, col.bounds.max.x);
+        zRandom = (int) Random.Range(col.bounds.min.z, col.bounds.max.z);
 
         return new Vector3(xRandom, 0.0f, zRandom);
-}
+    }
 
-void OntakeFromPool(SpawnHandler enemy)
-{
-    enemy.gameObject.setActive(true);
-    activeEnermies++;
-}
-void OnReturnToPool(SpawnHandler enemy)
-{
-    enemy.gameObject.setActive(false);
-    activeEnermies--;
-}
+    void OntakeFromPool(enemy enemy)
+    {
+        enemy.gameObject.setActive(true);
+        activeEnermies++;
+    }
+
+    void OnReturnToPool(enemy enemy)
+    {
+        enemy.gameObject.setActive(false);
+        activeEnermies--;
+    }
 }
