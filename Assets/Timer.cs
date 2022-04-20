@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
 {
     // Start is called before the first frame update
     public float timerRemaining = 3;
-    public bool timerIsRunning = false;
+    private bool timerIsRunning = false;
     public Text timeText;
     public string GameName;
 
@@ -17,7 +17,6 @@ public class Timer : MonoBehaviour
     private void Start()
     {
         timerIsRunning = true;
-
     }
 
     // Update is called once per frame
