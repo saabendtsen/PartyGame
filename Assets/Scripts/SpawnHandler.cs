@@ -13,7 +13,7 @@ public int numberOfEnemies;
 public GameObject terrain;
 private BoxCollider col;
 private int activeEnermies;
-
+ObjectPool<enemy> _pool;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +21,8 @@ private int activeEnermies;
        GameObject tmp = Instantiate(enemy);
        tmp.transform.position = new Vector3(0.0f, tmp.transform.position.y, 0.0f);
        col = terrain.GetComponent<BoxCollider>();
+
+       _pool = new ObjectPool<enemy>(GenerateObject,OntakeFromPool,OnReturnToPool);
 
         
     }
@@ -45,6 +47,9 @@ private int activeEnermies;
             tmp.gameObject.transform.position = new Vector3(randomPoint.x, 
             tmp.transform.position.y, randomPoint.z);
             activeEnermies++;
+            go.SetPool(_pool);
+
+            return go;
 
     }
 
@@ -58,5 +63,16 @@ private int activeEnermies;
         zRandom = (int)Random.Range(col.bounds.min.z, col.bounds.max.z);
 
         return new Vector3(xRandom, 0.0f, zRandom);
+}
+
+void OntakeFromPool(enemy enemy)
+{
+    enemy.gameObject.setActive(true);
+    activeEnermies++;
+}
+void OnReturnToPool(enemy enemy)
+{
+    enemy.gameObject.setActive(false);
+    activeEnermies--;
 }
 }
