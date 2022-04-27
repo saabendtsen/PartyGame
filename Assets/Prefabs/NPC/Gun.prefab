@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 3949212401408855572, guid: 08b8aeb8f884dc84593716264a817126, type: 3}
-  agent: {fileID: -2062069547981761112, guid: 07528473ad4aaef4dafddfe98a52d67c, type: 3}
+  agent: {fileID: -2062069547981761112, guid: bf427c3a62b93464381171736a2ea953, type: 3}
   targetRange: 15
   shootForce: 25
   upwardForce: 1000

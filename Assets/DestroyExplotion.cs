@@ -18,5 +18,6 @@ public class DestroyExplotion : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
+        //
     }
 }
