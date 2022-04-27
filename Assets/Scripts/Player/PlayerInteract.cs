@@ -11,6 +11,8 @@ public class PlayerInteract : MonoBehaviour {
     private float distance = 3f;
     [SerializeField]
     private LayerMask mask;
+    [SerializeField]
+    private Rigidbody player;
     private PlayerUI playerUI;
     private InputManager inputManager;
     public static PlayerInteract Instance {get;private set;}
@@ -37,5 +39,10 @@ public class PlayerInteract : MonoBehaviour {
                 }
             }
         }
+    }
+
+    public void TakeDamage(float explosionForce, Vector3 position,int explosionDamage)
+    {
+        player.AddForce(explosionForce,explosionForce,explosionForce);
     }
 }

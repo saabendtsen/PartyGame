@@ -86,7 +86,7 @@ public class EnemyAi : MonoBehaviour
 
     private void AttackPlayer()
     {
-        projectileGun.MyInput(playerPosition);
+        //projectileGun.MyInput(playerPosition);
     }
 
     private void FindNewTargetDestination()
@@ -122,10 +122,13 @@ public class EnemyAi : MonoBehaviour
             agent.isStopped = true;
             Invoke("StartAgent",1f);
         }
-
     }
-
     private void StartAgent(){
         agent.isStopped = false;
+    }
+
+    public void FriendlyFire(float explosionForce, Vector3 position,float explosionRange)
+    {
+
     }
 }

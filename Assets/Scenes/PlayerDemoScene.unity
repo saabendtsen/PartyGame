@@ -920,7 +920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 6661127813754028785, guid: 07528473ad4aaef4dafddfe98a52d67c, type: 3}
-  numberOfEnemies: 100
+  numberOfEnemies: 10
   terrain: {fileID: 1298428308}
 --- !u!1 &1009110666
 GameObject:
@@ -1841,9 +1841,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1495663561739382140, guid: c90b618a654b69248b595a692f4c98bc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1495663562073504228, guid: c90b618a654b69248b595a692f4c98bc, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495663562073504228, guid: c90b618a654b69248b595a692f4c98bc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1495663562073504229, guid: c90b618a654b69248b595a692f4c98bc, type: 3}
       propertyPath: sprinting

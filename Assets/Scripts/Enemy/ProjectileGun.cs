@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.AI;
+
 
 public class ProjectileGun : MonoBehaviour
 {
@@ -6,6 +8,9 @@ public class ProjectileGun : MonoBehaviour
 
     //bullet
     public GameObject bullet;
+
+    //GunOwner
+    //[SerializeField] private Rigidbody agent;
 
     //playerPos
     private GameObject playerObj = null;
@@ -27,6 +32,9 @@ public class ProjectileGun : MonoBehaviour
 
     //Reference 
     public Transform attackPoint;
+
+    //Recoil
+    private float recoilForce = 2;
 
 
     public bool allowInvoke = true;
@@ -73,10 +81,7 @@ public class ProjectileGun : MonoBehaviour
     private void Shoot(Vector3 target)
     {
         readyToShoot = false;
-        Debug.Log("im shooting");
-
         Vector3 directionWithoutSpread = target - attackPoint.position;
-
 
         //calc spread
         float x = Random.Range(-spread, spread);
@@ -88,6 +93,9 @@ public class ProjectileGun : MonoBehaviour
         GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
 
         currentBullet.transform.forward = directionWithSpread.normalized;
+
+        //Recoil
+        //agent.AddForce(-directionWithSpread.normalized * recoilForce,ForceMode.Impulse);
 
         //force to bullet
         currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
