@@ -15,6 +15,6 @@ public class PlayerUI : MonoBehaviour{
     }
 
     public void UpdateText(string promtMessage) {
-        promtText.text = promtMessage;
+        if (promtText) promtText.text = promtMessage;
     }
 }

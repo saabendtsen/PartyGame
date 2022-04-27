@@ -730,42 +730,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfbba37a49a0ccd4ea772ba1417ec63a, type: 3}
---- !u!1 &8394788008101061818 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: bfbba37a49a0ccd4ea772ba1417ec63a,
-    type: 3}
-  m_PrefabInstance: {fileID: 8394788008101093914}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8394788008101230746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: bfbba37a49a0ccd4ea772ba1417ec63a,
     type: 3}
   m_PrefabInstance: {fileID: 8394788008101093914}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4628904505783950956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8394788008101061818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b236fe595176eb444a6d65b04d480dfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 3457540868933410310}
-  shootForce: 300
-  upwardForce: 0
-  timeBetweenShooting: 0.1
-  spread: 0
-  reloadTime: 1.5
-  timeBetweenShots: 0
-  magzineSize: 100
-  bulletsPerTap: 1
-  allowButtonHold: 1
-  muzzleFlash: {fileID: 0}
-  ammunitionDisplay: {fileID: 2916722275962623362}
-  fpsCam: {fileID: 6204494067384203858}
-  attackPoint: {fileID: 231090896877794840}
-  allowInvoke: 1
