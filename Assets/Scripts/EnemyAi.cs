@@ -4,21 +4,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Move : MonoBehaviour
+public class EnemyAi : MonoBehaviour
 {
 
     private enum State
     {
         Roaming,
         ChaseTarget,
+        AttackPlayer,
     }
     private NavMeshAgent agent;
     private Animator anim;
     private GameObject playerObj = null;
 
+    [SerializeField]private ProjectileGun projectileGun;
+
     private Vector3 targetDestination;
+    private Vector3 startPosition;
+    private Vector3 currentPosition;
     private Vector3 playerPosition;
     private State state;
+    private float attackTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +38,8 @@ public class Move : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         state = State.Roaming;
+        startPosition = new Vector3(transform.position.x,transform.position.y,transform.position.z);
+        
 
         agent.stoppingDistance = 2;
     }
@@ -41,6 +49,8 @@ public class Move : MonoBehaviour
     {
         //update PlayerPosition
         playerPosition = new Vector3(playerObj.transform.position.x, playerObj.transform.position.y, playerObj.transform.position.z);
+        currentPosition = new Vector3(transform.position.x,transform.position.y,transform.position.z);
+
         
         //Set Enermy Speed
         anim.SetFloat("Speed", agent.speed);
@@ -52,24 +62,31 @@ public class Move : MonoBehaviour
         {
             default:
             case State.Roaming:
+                if (Vector3.Distance(currentPosition, currentPosition) < 50)
+                {
+                    agent.SetDestination(startPosition);
+                }
                 if (agent.remainingDistance < agent.stoppingDistance)
                 {
                     FindNewTargetDestination();
                 }
+                if(agent)
                 agent.SetDestination(targetDestination);
                 break;
 
             case State.ChaseTarget:
                 agent.SetDestination(playerPosition);
                 break;
-
+            case State.AttackPlayer:
+                AttackPlayer();
+                break;
 
         }
+    }
 
-        
-
-
-
+    private void AttackPlayer()
+    {
+        projectileGun.MyInput(playerPosition);
     }
 
     private void FindNewTargetDestination()
@@ -91,15 +108,24 @@ public class Move : MonoBehaviour
     private void CheckDistanceToPlayer()
     {
         float targetRange = 10f;
-        float stopChaseRange = 25f;
+        float attackRange = 25f;
+        attackTimer -= Time.deltaTime;
+        state = State.Roaming;
         if (Vector3.Distance(transform.position, playerPosition) < targetRange)
         {
             state = State.ChaseTarget;
         }
-
-        if (Vector3.Distance(transform.position, playerPosition) > stopChaseRange)
+        if (Vector3.Distance(transform.position, playerPosition) < attackRange && attackTimer <= 0)
         {
-            state = State.Roaming;
+            state = State.AttackPlayer;
+            attackTimer = 4f;
+            agent.isStopped = true;
+            Invoke("StartAgent",1f);
         }
+
+    }
+
+    private void StartAgent(){
+        agent.isStopped = false;
     }
 }

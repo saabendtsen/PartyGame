@@ -40,9 +40,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6661127813754028788}
   - component: {fileID: 6661127813754028791}
-  - component: {fileID: 6661127813754028789}
   - component: {fileID: 6661127813754028790}
   - component: {fileID: 6404349750994055222}
+  - component: {fileID: 1602017257647933091}
   m_Layer: 0
   m_Name: WinterGuard
   m_TagString: Untagged
@@ -88,18 +88,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &6661127813754028789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6661127813754028785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a8f740f931814c4e936febdcc2553b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &6661127813754028790
 Animator:
   serializedVersion: 3
@@ -132,6 +120,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthDisplay: {fileID: 0}
+--- !u!114 &1602017257647933091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661127813754028785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6241a67cfef6342903308cecefe226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileGun: {fileID: 3369096330298011682}
 --- !u!1 &9137767004462363735
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +246,7 @@ MonoBehaviour:
   targetRange: 15
   shootForce: 300
   upwardForce: 0
-  timeBetweenShooting: 0.1
+  timeBetweenShooting: 2
   spread: 3
   reloadTime: 1.5
   TimeBEtweenshots: 0

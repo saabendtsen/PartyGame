@@ -50,42 +50,30 @@ public class ProjectileGun : MonoBehaviour
 
     void Update()
     {
-        MyInput();
-
         //update PlayerPosition
-        playerPosition = new Vector3(playerObj.transform.position.x, playerObj.transform.position.y, playerObj.transform.position.z);
+        //playerPosition = new Vector3(playerObj.transform.position.x, playerObj.transform.position.y, playerObj.transform.position.z);
 
+        //MyInput(playerPosition);
+
+        
     }
 
-    private void MyInput()
+    public void MyInput(Vector3 target)
     {
 
-        if (Vector3.Distance(transform.position, playerPosition) < targetRange)
-        {
-            shooting = true;
-        }
-
-        if (Vector3.Distance(transform.position, playerPosition) > targetRange)
-        {
-            shooting = false;
-        }
-
-        if(readyToShoot && shooting && !reloading && bulletsLeft <= 0) Reload();
+        if(readyToShoot && !reloading && bulletsLeft <= 0) Reload();
 
         //Shooting 
-        if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
+        if (readyToShoot && !reloading && bulletsLeft > 0)
         {
             bulletsShot = 0;
-            Shoot();
+            Shoot(target);
         }
     }
-    private void Shoot()
+    private void Shoot(Vector3 target)
     {
         readyToShoot = false;
         Debug.Log("im shooting");
-
-
-        Vector3 target = playerPosition;
 
         Vector3 directionWithoutSpread = target - attackPoint.position;
 
