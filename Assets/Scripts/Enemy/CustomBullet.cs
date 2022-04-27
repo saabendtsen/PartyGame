@@ -72,18 +72,15 @@ public class CustomBullet : MonoBehaviour
         Destroy(gameObject);
     }
     private void OnCollisionEnter(Collision collision) {
+        //Don't count collisions with other bullets
+        if (collision.collider.CompareTag("Grenade")) return;
+
         collisions++;
 
         if (collision.collider.CompareTag("Player") && explodeOnTouch) Explode();
         if (collision.collider.CompareTag("Enemy") && explodeOnTouch) Explode();
 
     }
-
-   
-
-
-
-
 
 
     private void Setup()

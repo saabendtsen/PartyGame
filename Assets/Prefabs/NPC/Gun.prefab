@@ -110,17 +110,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 3949212401408855572, guid: 08b8aeb8f884dc84593716264a817126, type: 3}
+  agent: {fileID: -2062069547981761112, guid: 07528473ad4aaef4dafddfe98a52d67c, type: 3}
   targetRange: 15
-  shootForce: 70
-  upwardForce: 7
+  shootForce: 25
+  upwardForce: 1000
   timeBetweenShooting: 2
-  spread: 3
+  spread: 0
   reloadTime: 4
   TimeBEtweenshots: 0
   magazineSize: 3
   bulletsPerTap: 1
   allowButtonHold: 1
   attackPoint: {fileID: 5644859301040406613}
+  recoilForce: 500
   allowInvoke: 1
   muzzelFlash: {fileID: 0}
 --- !u!1 &5845176513325954201

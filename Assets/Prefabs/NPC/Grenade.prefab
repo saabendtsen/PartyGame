@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 3680626505701722260}
   - component: {fileID: 3782742112082881599}
   - component: {fileID: -1468327076323294388}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grenade
-  m_TagString: Untagged
+  m_TagString: Grenade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,12 +134,12 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 128
-  bounciness: 0.63
+  bounciness: 0.807
   useGravity: 1
   explosionDamage: 40
   explosionRange: 2
   explosionForce: 1000
-  maxCollisions: 3
+  maxCollisions: 5
   maxLifetime: 5
   explodeOnTouch: 1
 --- !u!96 &-1468327076323294388
@@ -200,8 +200,8 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.5810157
-        value: 0.62025106
+        time: 0.63405526
+        value: 0.7775539
         inSlope: -1.0937861
         outSlope: -1.0937861
         tangentMode: 0

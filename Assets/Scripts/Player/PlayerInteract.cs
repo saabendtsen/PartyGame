@@ -44,5 +44,6 @@ public class PlayerInteract : MonoBehaviour {
     public void TakeDamage(float explosionForce, Vector3 position,int explosionDamage)
     {
         player.AddForce(explosionForce,explosionForce,explosionForce);
+        Debug.Log("Player hit");
     }
 }

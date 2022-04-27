@@ -10,12 +10,13 @@ public class ProjectileGun : MonoBehaviour
     public GameObject bullet;
 
     //GunOwner
-    //[SerializeField] private Rigidbody agent;
+    [SerializeField] private Rigidbody agent;
 
     //playerPos
     private GameObject playerObj = null;
     private Vector3 playerPosition;
     public float targetRange;
+
 
     //bullet force
     public float shootForce, upwardForce;
@@ -34,7 +35,7 @@ public class ProjectileGun : MonoBehaviour
     public Transform attackPoint;
 
     //Recoil
-    private float recoilForce = 2;
+    public float recoilForce;
 
 
     public bool allowInvoke = true;
@@ -82,6 +83,7 @@ public class ProjectileGun : MonoBehaviour
     {
         readyToShoot = false;
         Vector3 directionWithoutSpread = target - attackPoint.position;
+         
 
         //calc spread
         float x = Random.Range(-spread, spread);
@@ -91,11 +93,12 @@ public class ProjectileGun : MonoBehaviour
         Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0);
 
         GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
-
-        currentBullet.transform.forward = directionWithSpread.normalized;
+        
+        currentBullet.transform.forward = directionWithSpread.normalized; 
+        
 
         //Recoil
-        //agent.AddForce(-directionWithSpread.normalized * recoilForce,ForceMode.Impulse);
+        agent.AddForce(-directionWithSpread.normalized * recoilForce,ForceMode.Impulse);
 
         //force to bullet
         currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
