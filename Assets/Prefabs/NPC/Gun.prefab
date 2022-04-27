@@ -111,8 +111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3949212401408855572, guid: 08b8aeb8f884dc84593716264a817126, type: 3}
   targetRange: 15
-  shootForce: 70
-  upwardForce: 7
+  shootForce: 35
+  upwardForce: 100
   timeBetweenShooting: 2
   spread: 3
   reloadTime: 4

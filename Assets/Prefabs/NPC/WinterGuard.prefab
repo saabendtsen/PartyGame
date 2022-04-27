@@ -108,7 +108,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a6241a67cfef6342903308cecefe226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidbody: {fileID: -2062069547981761112}
   projectileGun: {fileID: 3369096330298011682}
+  attackRange: 15
+  chaseRange: 30
+  stopChaseRange: 40
 --- !u!54 &-2062069547981761112
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -121,7 +125,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0

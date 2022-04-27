@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -337,10 +337,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 780628528}
     m_Modifications:
-    - target: {fileID: 5579208467467886792, guid: 00dae9ddfb6c1da4886259b40b04e320, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 5579208468287753988, guid: 00dae9ddfb6c1da4886259b40b04e320, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -388,22 +384,6 @@ PrefabInstance:
     - target: {fileID: 5579208468287754011, guid: 00dae9ddfb6c1da4886259b40b04e320, type: 3}
       propertyPath: m_Name
       value: Main Surface
-      objectReference: {fileID: 0}
-    - target: {fileID: 5579208468554932608, guid: 00dae9ddfb6c1da4886259b40b04e320, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5579208468755906760, guid: 00dae9ddfb6c1da4886259b40b04e320, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5579208468779039072, guid: 00dae9ddfb6c1da4886259b40b04e320, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5579208469066223303, guid: 00dae9ddfb6c1da4886259b40b04e320, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dae9ddfb6c1da4886259b40b04e320, type: 3}
@@ -883,7 +863,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 780628528}
-  - component: {fileID: 780628529}
   m_Layer: 0
   m_Name: Arena
   m_TagString: Untagged
@@ -907,21 +886,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &780628529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780628527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 650cb158eb59a4a4c8e8ddfd5b7c9461, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 6661127813754028785, guid: 07528473ad4aaef4dafddfe98a52d67c, type: 3}
-  numberOfEnemies: 10
-  terrain: {fileID: 1298428308}
 --- !u!1 &1009110666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,11 +1061,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191575344}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1298428308 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5579208468779039072, guid: 00dae9ddfb6c1da4886259b40b04e320, type: 3}
-  m_PrefabInstance: {fileID: 315520801}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1304215253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,6 +1586,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 64
+  player: {fileID: 0}
 --- !u!114 &1900489909
 MonoBehaviour:
   m_ObjectHideFlags: 0

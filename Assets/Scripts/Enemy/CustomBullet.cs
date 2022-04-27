@@ -53,14 +53,20 @@ public class CustomBullet : MonoBehaviour
         //Check for enemy
         Collider[] enemies = Physics.OverlapSphere(transform.position,explosionRange,whatIsEnemy);
         for(int i = 0; i < enemies.Length;i++){
-            enemies[i].GetComponent<EnemyAi>().FriendlyFire(explosionForce,transform.position,explosionRange);
+            //This shit not working -.-
+
+            //apply knowback on enemy
+            //enemies[i].GetComponent<EnemyAi>().FriendlyFire(explosionForce,transform.position,explosionRange);
         }
 
         //check for player
         Collider[] player = Physics.OverlapSphere(transform.position,explosionRange,whatIsPlayer);
         
         for(int i = 0; i < enemies.Length;i++){
-            player[i].GetComponent<PlayerInteract>().TakeDamage(explosionForce,transform.position,explosionDamage);
+             //This shit not working -.-
+
+             //give player damage
+            //player[i].GetComponent<PlayerInteract>().TakeDamage(explosionForce,transform.position,explosionDamage);
             
         }
 
