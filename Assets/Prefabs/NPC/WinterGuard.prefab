@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6404349750994055222}
   - component: {fileID: 1602017257647933091}
   - component: {fileID: -2062069547981761112}
+  - component: {fileID: 2553187140473763965}
   m_Layer: 7
   m_Name: WinterGuard
   m_TagString: Enemy
@@ -90,7 +91,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6661127813754028785}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f63c4667e9af22b4a9ba985ef4f761bc, type: 3}
   m_Name: 
@@ -128,7 +129,20 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
+--- !u!114 &2553187140473763965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661127813754028785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1bb0f5ff9bbf4e46862c507e8fa8d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1001 &6661127813334004580
 PrefabInstance:
   m_ObjectHideFlags: 0
