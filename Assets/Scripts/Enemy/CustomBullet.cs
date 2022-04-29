@@ -81,9 +81,23 @@ public class CustomBullet : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision) 
     {
-        collisions++;
-        if (collision.collider.CompareTag("Player") && explodeOnTouch)Explode();
-        if (collision.collider.CompareTag("Enemy") && explodeOnTouch)Explode();  
+        //collisions++;
+        if (collision.gameObject.tag=="Player" ) 
+        {
+            PlayerHealth playerTarget = collision.transform.gameObject.GetComponent<PlayerHealth>();
+            playerTarget.ApplyDamage(explosionDamage);
+            Explode();
+        }
+
+
+           
+        
+        if (collision.gameObject.tag=="Enemy" ) 
+        {
+            EnemyTarget target = collision.transform.gameObject.GetComponent<EnemyTarget>();
+            target.ApplyDamage(explosionDamage);
+            Explode();
+        }  
     }
 
    

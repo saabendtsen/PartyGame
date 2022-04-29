@@ -1962,6 +1962,14 @@ PrefabInstance:
       propertyPath: promtText
       value: 
       objectReference: {fileID: 1304215255}
+    - target: {fileID: 4805564227700620971, guid: 9a206bd75da61ff4f973dde1df815bfa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805564227700620971, guid: 9a206bd75da61ff4f973dde1df815bfa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.037
+      objectReference: {fileID: 0}
     - target: {fileID: 4805564227700620972, guid: 9a206bd75da61ff4f973dde1df815bfa, type: 3}
       propertyPath: Force
       value: 4000
