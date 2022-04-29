@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyTarget : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
 
     public float health = 100f;
@@ -12,14 +12,12 @@ public class EnemyTarget : MonoBehaviour
         health -= amount;
         if(health <= 0)
         {
-        Die();
+        Application.Quit();
         }
     }
 
-    void Die()
-    {
-        Destroy(gameObject);
-    }
+
+
 
 
     // Start is called before the first frame update

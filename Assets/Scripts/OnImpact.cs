@@ -15,7 +15,6 @@ public class OnImpact : MonoBehaviour
         if(collision.gameObject.tag=="Enemy")
         {
             EnemyTarget target = collision.transform.gameObject.GetComponent<EnemyTarget>();
-            Debug.Log("Damage");
             target.ApplyDamage(damage);
         }
 

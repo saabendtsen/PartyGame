@@ -53,6 +53,7 @@ public class CustomBullet : MonoBehaviour
         //Check for enemy
         Collider[] enemies = Physics.OverlapSphere(transform.position,explosionRange,whatIsEnemy);
         for(int i = 0; i < enemies.Length;i++){
+    
             //This shit not working -.-
 
             //apply knowback on enemy
@@ -62,7 +63,8 @@ public class CustomBullet : MonoBehaviour
         //check for player
         Collider[] player = Physics.OverlapSphere(transform.position,explosionRange,whatIsPlayer);
         
-        for(int i = 0; i < enemies.Length;i++){
+        for(int i = 0; i < enemies.Length; i++){
+        
              //This shit not working -.-
 
              //give player damage
@@ -77,20 +79,14 @@ public class CustomBullet : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    private void OnCollisionEnter(Collision collision) {
+    private void OnCollisionEnter(Collision collision) 
+    {
         collisions++;
-
-        if (collision.collider.CompareTag("Player") && explodeOnTouch) Explode();
-        if (collision.collider.CompareTag("Enemy") && explodeOnTouch) Explode();
-
+        if (collision.collider.CompareTag("Player") && explodeOnTouch)Explode();
+        if (collision.collider.CompareTag("Enemy") && explodeOnTouch)Explode();  
     }
 
    
-
-
-
-
-
 
     private void Setup()
     {
