@@ -9,10 +9,11 @@ public class PlayerHealth : MonoBehaviour
 
     public void ApplyDamage(float amount)
     {
+        Debug.Log("Player take Damage");
         health -= amount;
         if(health <= 0)
         {
-        Application.Quit();
+        Debug.Log("YOU DIED! NOOB");
         }
     }
 

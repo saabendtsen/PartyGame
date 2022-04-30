@@ -176,11 +176,7 @@ public class EnemyAi : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, rot, 1);
     }
 
-    public void FriendlyFire(
-        float explosionForce,
-        Vector3 position,
-        float explosionRange
-    )
+    public void FriendlyFire()
     {
         Debug.Log("Took dmg");
     }

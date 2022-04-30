@@ -10,7 +10,7 @@ public class OnImpact : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        ContactPoint contact =collision.contacts[0];
+        //ContactPoint contact =collision.contacts[0];
         //Instantiate(impactEffect,contact.point,Quaternion.LookRotation(contact.normal));
         if(collision.gameObject.tag=="Enemy")
         {

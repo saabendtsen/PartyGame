@@ -51,26 +51,21 @@ public class CustomBullet : MonoBehaviour
         if(explosion != null) Instantiate(explosion,transform.position, Quaternion.identity);
 
         //Check for enemy
-        Collider[] enemies = Physics.OverlapSphere(transform.position,explosionRange,whatIsEnemy);
+        Collider[] enemies = Physics.OverlapSphere(transform.position,explosionRange);
         for(int i = 0; i < enemies.Length;i++){
-    
-            //This shit not working -.-
+        
+             if(enemies[i].gameObject.tag=="Enemy")
+             {
+                enemies[i].GetComponent<EnemyTarget>().ApplyDamage(explosionDamage);
+             }
 
-            //apply knowback on enemy
-            //enemies[i].GetComponent<EnemyAi>().FriendlyFire(explosionForce,transform.position,explosionRange);
+             if(enemies[i].gameObject.tag=="Player")
+             {
+                 enemies[i].GetComponent<PlayerHealth>().ApplyDamage(explosionDamage);
+             }
         }
 
-        //check for player
-        Collider[] player = Physics.OverlapSphere(transform.position,explosionRange,whatIsPlayer);
-        
-        for(int i = 0; i < enemies.Length; i++){
-        
-             //This shit not working -.-
-
-             //give player damage
-            //player[i].GetComponent<PlayerInteract>().TakeDamage(explosionForce,transform.position,explosionDamage);
-            
-        }
+      
 
         Invoke("Delay",0.05f);
 
@@ -81,23 +76,9 @@ public class CustomBullet : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision) 
     {
-        //collisions++;
-        if (collision.gameObject.tag=="Player" ) 
-        {
-            PlayerHealth playerTarget = collision.transform.gameObject.GetComponent<PlayerHealth>();
-            playerTarget.ApplyDamage(explosionDamage);
-            Explode();
-        }
-
-
-           
-        
-        if (collision.gameObject.tag=="Enemy" ) 
-        {
-            EnemyTarget target = collision.transform.gameObject.GetComponent<EnemyTarget>();
-            target.ApplyDamage(explosionDamage);
-            Explode();
-        }  
+        collisions++;
+        if (collision.collider.CompareTag("Player") && explodeOnTouch)Explode();
+        if (collision.collider.CompareTag("Enemy") && explodeOnTouch)Explode();  
     }
 
    

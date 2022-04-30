@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1602017257647933091}
   - component: {fileID: -2062069547981761112}
   - component: {fileID: 2553187140473763965}
+  - component: {fileID: -2457225534307820850}
   m_Layer: 7
   m_Name: WinterGuard
   m_TagString: Enemy
@@ -143,6 +144,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!136 &-2457225534307820850
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661127813754028785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &6661127813334004580
 PrefabInstance:
   m_ObjectHideFlags: 0
