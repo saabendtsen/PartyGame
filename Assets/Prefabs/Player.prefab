@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4805564226678644261}
   - component: {fileID: 4805564226678644284}
   - component: {fileID: 4805564226678644285}
+  - component: {fileID: 1900489910}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -182,6 +183,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promtText: {fileID: 0}
+--- !u!114 &1900489910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4805564226678644260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04207295682c8c4cba9e7c0e0af4456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &4805564227700620970
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4805564227700620970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.946}
+  m_LocalPosition: {x: 0, y: -0.05, z: 1.037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4805564227962763044}
@@ -226,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 0}
-  Force: 2000
+  Force: 4000
 --- !u!1 &4805564227867397861
 GameObject:
   m_ObjectHideFlags: 0
