@@ -10,12 +10,15 @@ public class OnImpact : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        //ContactPoint contact =collision.contacts[0];
-        //Instantiate(impactEffect,contact.point,Quaternion.LookRotation(contact.normal));
         if(collision.gameObject.tag=="Enemy")
         {
             EnemyTarget target = collision.transform.gameObject.GetComponent<EnemyTarget>();
             target.ApplyDamage(damage);
+        }
+        else if(collision.gameObject.tag=="Player")
+        {
+            PlayerHealth playerTarget = collision.transform.gameObject.GetComponent<PlayerHealth>();
+            playerTarget.ApplyDamage(damage);
         }
 
         Destroy(gameObject);
