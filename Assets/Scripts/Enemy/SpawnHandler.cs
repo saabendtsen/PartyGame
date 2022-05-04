@@ -21,6 +21,7 @@ private int activeEnermies;
        GameObject tmp = Instantiate(enemy);
        tmp.transform.position = new Vector3(0.0f, tmp.transform.position.y, 0.0f);
        col = terrain.GetComponent<BoxCollider>();
+       
 
         
     }
