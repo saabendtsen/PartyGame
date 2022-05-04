@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,6 @@ public class PlayerUI : MonoBehaviour{
     }
 
     public void UpdateText(string promtMessage) {
-       promtText.text = promtMessage;
+        promtText.text = promtMessage;
     }
 }

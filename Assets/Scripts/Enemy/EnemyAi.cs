@@ -128,7 +128,6 @@ public class EnemyAi : MonoBehaviour
     private void AttackPlayer()
     {
         LookAtPlayer();
-        anim.Play("Attack");
         projectileGun.MyInput(playerPosition);
         agent.SetDestination(currentPosition);
     }
