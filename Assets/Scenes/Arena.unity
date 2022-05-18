@@ -180,6 +180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -566,6 +570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1667436313887862, guid: 22685b79ea15f0e48b3968158ffdb9cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4596427618827448, guid: 22685b79ea15f0e48b3968158ffdb9cd, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -744,9 +752,169 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1803590426}
     m_Modifications:
+    - target: {fileID: 1008185563716160, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018526489506810, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022647788607038, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025171240526020, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036353009862294, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100807521935398, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107081653169310, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129174234299804, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189809566876950, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190944057196346, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211465635198928, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215824381655100, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1229835066733506, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
       propertyPath: m_Name
       value: DesertTower_Blue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229835066733506, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296973153146064, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314618111952324, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328449149069068, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357297234182832, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1373194074643204, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375944794552252, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384852683259802, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395873782546386, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426144133510108, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497017161008920, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518879480836420, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524417494267464, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551164493272374, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568104376405988, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619302513358534, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644187251575634, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695694180715676, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736556322077788, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772162549636032, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820363108367978, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831702886027202, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840216591820046, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852374691432654, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865499159251454, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871206344022264, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914831813625530, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923031143104828, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4072145034489456, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
       propertyPath: m_RootOrder
@@ -897,6 +1065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock01
       objectReference: {fileID: 0}
+    - target: {fileID: 1667436313887862, guid: 22685b79ea15f0e48b3968158ffdb9cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4596427618827448, guid: 22685b79ea15f0e48b3968158ffdb9cd, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -961,6 +1133,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_Name
       value: DesertRock01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
@@ -1103,9 +1279,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1027654838185546, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040999704452568, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1294479768850062, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
       propertyPath: m_Name
       value: DesertBannerHolder_Red (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294479768850062, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445713249962898, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1605416001304144, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721264614306556, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844817338554210, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1868380164314404, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927093091738480, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4933166105817346, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
       propertyPath: m_RootOrder
@@ -1248,6 +1460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock02
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1313,6 +1529,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertPear (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114081256727678, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1369,6 +1589,10 @@ PrefabInstance:
     - target: {fileID: 1337596380606652, guid: 20695df1f6871444aa5c18b9de1265fd, type: 3}
       propertyPath: m_Name
       value: DesertDoorLeft_Blue (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1337596380606652, guid: 20695df1f6871444aa5c18b9de1265fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4302007027416544, guid: 20695df1f6871444aa5c18b9de1265fd, type: 3}
       propertyPath: m_RootOrder
@@ -1449,6 +1673,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_Name
       value: DesertRock02 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
@@ -1788,6 +2016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertCactus01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1164234671884734, guid: 1c24e320d47d7fe45ab0adceb6ad319e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4461085589139630, guid: 1c24e320d47d7fe45ab0adceb6ad319e, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -2063,9 +2295,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1090081098275954, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113903355046786, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178444487446554, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231115845765134, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280368539927962, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448003546638906, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738777743221236, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843646117427324, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1927198837121888, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
       propertyPath: m_Name
       value: DesertBannerHolder_Blue (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927198837121888, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4662179573750892, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
       propertyPath: m_RootOrder
@@ -2123,6 +2391,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_Name
       value: DesertRock01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
@@ -2363,6 +2635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -2539,9 +2815,169 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1803590426}
     m_Modifications:
+    - target: {fileID: 1008185563716160, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018526489506810, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022647788607038, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025171240526020, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036353009862294, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100807521935398, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107081653169310, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129174234299804, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189809566876950, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190944057196346, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211465635198928, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215824381655100, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1229835066733506, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
       propertyPath: m_Name
       value: DesertTower_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229835066733506, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296973153146064, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314618111952324, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328449149069068, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357297234182832, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1373194074643204, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375944794552252, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384852683259802, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395873782546386, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426144133510108, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497017161008920, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518879480836420, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524417494267464, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551164493272374, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568104376405988, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619302513358534, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644187251575634, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695694180715676, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736556322077788, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772162549636032, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820363108367978, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831702886027202, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840216591820046, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852374691432654, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865499159251454, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871206344022264, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914831813625530, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923031143104828, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4072145034489456, guid: 28ce22920feff1844b50e113bdb9d126, type: 3}
       propertyPath: m_RootOrder
@@ -2729,6 +3165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock03 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -2816,6 +3256,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_Name
       value: DesertRock03 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
@@ -3072,6 +3516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -3160,6 +3608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertDoorLeft_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 1337596380606652, guid: 20695df1f6871444aa5c18b9de1265fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4302007027416544, guid: 20695df1f6871444aa5c18b9de1265fd, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -3216,6 +3668,10 @@ PrefabInstance:
     - target: {fileID: 1891480297044500, guid: b3c84e6efa50bcc4c8e8073c9f0fd143, type: 3}
       propertyPath: m_Name
       value: DesertRock02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891480297044500, guid: b3c84e6efa50bcc4c8e8073c9f0fd143, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4824009527463958, guid: b3c84e6efa50bcc4c8e8073c9f0fd143, type: 3}
       propertyPath: m_RootOrder
@@ -3412,6 +3868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertCowSkull
       objectReference: {fileID: 0}
+    - target: {fileID: 1851599260321516, guid: 603180f4e14cad44f998ca8340095c80, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4103606245620684, guid: 603180f4e14cad44f998ca8340095c80, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3539,6 +3999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertGround01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1374047387117784, guid: 3fa788c098c4af845a062e26e06baf8c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4507444670397782, guid: 3fa788c098c4af845a062e26e06baf8c, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -3618,6 +4082,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_Name
       value: DesertRock02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
@@ -3885,6 +4353,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_Name
       value: DesertRock02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
@@ -4199,9 +4671,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1803590426}
     m_Modifications:
+    - target: {fileID: 1239292114348512, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444550904283804, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556000704166598, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1615805322119754, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_Name
       value: DesertCastle_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615805322119754, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630704292238672, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861191440845934, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4567931139058554, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_RootOrder
@@ -4260,6 +4756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertJar02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1067366188859084, guid: 8866756bb5c6102468465319bbd59d9b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4290849129447582, guid: 8866756bb5c6102468465319bbd59d9b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4313,9 +4813,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 852734313}
     m_Modifications:
+    - target: {fileID: 1413066595354350, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544341984015996, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_Name
       value: DesertChestComplete (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4234813111254052, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_RootOrder
@@ -4478,6 +4990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertPear (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114081256727678, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -4534,6 +5050,10 @@ PrefabInstance:
     - target: {fileID: 1524366524754466, guid: 6e3b4822027c1df4d92572e9ddbd1f21, type: 3}
       propertyPath: m_Name
       value: Desertjar03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524366524754466, guid: 6e3b4822027c1df4d92572e9ddbd1f21, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4079660223392856, guid: 6e3b4822027c1df4d92572e9ddbd1f21, type: 3}
       propertyPath: m_RootOrder
@@ -4806,6 +5326,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_Name
       value: DesertRock03 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
@@ -5156,6 +5680,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_Name
       value: DesertRock02 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
@@ -5592,6 +6120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -5808,6 +6340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5892,9 +6428,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1803590426}
     m_Modifications:
+    - target: {fileID: 1413066595354350, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544341984015996, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_Name
       value: DesertChestComplete
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4234813111254052, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_RootOrder
@@ -6079,9 +6627,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1004549442224060, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027205273449516, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1471701822128868, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
       propertyPath: m_Name
       value: DesertCastle_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471701822128868, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1493802142030926, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730672883638634, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831761457673994, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4371177918587084, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
       propertyPath: m_RootOrder
@@ -6710,6 +7282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock03 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -6986,9 +7562,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1239292114348512, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444550904283804, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556000704166598, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1615805322119754, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_Name
       value: DesertCastle_Blue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615805322119754, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630704292238672, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861191440845934, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4567931139058554, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_RootOrder
@@ -7189,9 +7789,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1090081098275954, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113903355046786, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178444487446554, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231115845765134, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280368539927962, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448003546638906, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738777743221236, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843646117427324, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1927198837121888, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
       propertyPath: m_Name
       value: DesertBannerHolder_Blue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927198837121888, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4662179573750892, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
       propertyPath: m_RootOrder
@@ -7392,9 +8028,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1090081098275954, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113903355046786, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178444487446554, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231115845765134, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280368539927962, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448003546638906, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738777743221236, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843646117427324, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1927198837121888, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
       propertyPath: m_Name
       value: DesertBannerHolder_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927198837121888, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4662179573750892, guid: ed3d3f151c89c344d9072cec0e46f0e8, type: 3}
       propertyPath: m_RootOrder
@@ -7545,6 +8217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock02 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -7680,6 +8356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertPear
       objectReference: {fileID: 0}
+    - target: {fileID: 1114081256727678, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -7759,6 +8439,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_Name
       value: DesertRock03 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
@@ -8025,6 +8709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock02 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -8158,6 +8846,10 @@ PrefabInstance:
     - target: {fileID: 1067366188859084, guid: 8866756bb5c6102468465319bbd59d9b, type: 3}
       propertyPath: m_Name
       value: DesertJar02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067366188859084, guid: 8866756bb5c6102468465319bbd59d9b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4290849129447582, guid: 8866756bb5c6102468465319bbd59d9b, type: 3}
       propertyPath: m_RootOrder
@@ -8525,9 +9217,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1239292114348512, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444550904283804, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556000704166598, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1615805322119754, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_Name
       value: DesertCastle_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615805322119754, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630704292238672, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861191440845934, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4567931139058554, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_RootOrder
@@ -8647,6 +9363,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_Name
       value: DesertRock01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
@@ -8917,6 +9637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock03 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -9027,6 +9751,10 @@ PrefabInstance:
     - target: {fileID: 1231317846777894, guid: 0b11f3e3598030a4cad53cc4f20630b0, type: 3}
       propertyPath: m_Name
       value: DesertRock05 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231317846777894, guid: 0b11f3e3598030a4cad53cc4f20630b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4068095889525140, guid: 0b11f3e3598030a4cad53cc4f20630b0, type: 3}
       propertyPath: m_RootOrder
@@ -9169,6 +9897,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_Name
       value: DesertRock03 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
@@ -9420,6 +10152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -9489,6 +10225,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_Name
       value: DesertRock01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
@@ -9682,6 +10422,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_Name
       value: DesertRock03 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
@@ -9898,6 +10642,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_Name
       value: DesertRock01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
@@ -10148,6 +10896,10 @@ PrefabInstance:
     - target: {fileID: 1149743120747430, guid: a9bf475512efb6e42964dedf7f2f1271, type: 3}
       propertyPath: m_Name
       value: DesertRock03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149743120747430, guid: a9bf475512efb6e42964dedf7f2f1271, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4767502860717370, guid: a9bf475512efb6e42964dedf7f2f1271, type: 3}
       propertyPath: m_RootOrder
@@ -10480,6 +11232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock01
       objectReference: {fileID: 0}
+    - target: {fileID: 1667436313887862, guid: 22685b79ea15f0e48b3968158ffdb9cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4596427618827448, guid: 22685b79ea15f0e48b3968158ffdb9cd, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -10769,6 +11525,10 @@ PrefabInstance:
     - target: {fileID: 1164234671884734, guid: 1c24e320d47d7fe45ab0adceb6ad319e, type: 3}
       propertyPath: m_Name
       value: DesertCactus01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164234671884734, guid: 1c24e320d47d7fe45ab0adceb6ad319e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4461085589139630, guid: 1c24e320d47d7fe45ab0adceb6ad319e, type: 3}
       propertyPath: m_RootOrder
@@ -11216,6 +11976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock03 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -11300,9 +12064,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1027654838185546, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040999704452568, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1294479768850062, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
       propertyPath: m_Name
       value: DesertBannerHolder_Red (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294479768850062, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445713249962898, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1605416001304144, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721264614306556, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844817338554210, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1868380164314404, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927093091738480, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4933166105817346, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
       propertyPath: m_RootOrder
@@ -11383,6 +12183,10 @@ PrefabInstance:
     - target: {fileID: 1374047387117784, guid: 3fa788c098c4af845a062e26e06baf8c, type: 3}
       propertyPath: m_Name
       value: DesertGround01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374047387117784, guid: 3fa788c098c4af845a062e26e06baf8c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4507444670397782, guid: 3fa788c098c4af845a062e26e06baf8c, type: 3}
       propertyPath: m_RootOrder
@@ -11498,6 +12302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock04
       objectReference: {fileID: 0}
+    - target: {fileID: 1397732506665660, guid: d77c2639e12a33b4b946e2cf7bd3adb7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4951918527361944, guid: d77c2639e12a33b4b946e2cf7bd3adb7, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -11612,6 +12420,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_Name
       value: DesertRock02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
@@ -11798,6 +12610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -11955,6 +12771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desertjar01
       objectReference: {fileID: 0}
+    - target: {fileID: 1913606116510838, guid: 7837a0e440c9a534ab604175ed3de3a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4592565193377862, guid: 7837a0e440c9a534ab604175ed3de3a6, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -12016,6 +12836,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_Name
       value: DesertRock02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
@@ -12151,6 +12975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock05
       objectReference: {fileID: 0}
+    - target: {fileID: 1231317846777894, guid: 0b11f3e3598030a4cad53cc4f20630b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4068095889525140, guid: 0b11f3e3598030a4cad53cc4f20630b0, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -12220,6 +13048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -12281,9 +13113,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1239292114348512, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444550904283804, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556000704166598, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1615805322119754, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_Name
       value: DesertCastle_Blue (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615805322119754, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630704292238672, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861191440845934, guid: 699289c87c215de47a357b833d76a431, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4567931139058554, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_RootOrder
@@ -12676,9 +13532,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1413066595354350, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544341984015996, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_Name
       value: DesertChestComplete
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4234813111254052, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_RootOrder
@@ -12934,6 +13802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock02 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -13045,6 +13917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -13129,9 +14005,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1027654838185546, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040999704452568, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1294479768850062, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
       propertyPath: m_Name
       value: DesertBannerHolder_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294479768850062, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445713249962898, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1605416001304144, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721264614306556, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844817338554210, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1868380164314404, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927093091738480, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4933166105817346, guid: 3ec7f26ddb4632f4596e058518efc89a, type: 3}
       propertyPath: m_RootOrder
@@ -13297,6 +14209,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_Name
       value: DesertRock03 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
@@ -13941,6 +14857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock03 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -14051,6 +14971,10 @@ PrefabInstance:
     - target: {fileID: 1337596380606652, guid: 20695df1f6871444aa5c18b9de1265fd, type: 3}
       propertyPath: m_Name
       value: DesertDoorLeft_Blue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1337596380606652, guid: 20695df1f6871444aa5c18b9de1265fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4302007027416544, guid: 20695df1f6871444aa5c18b9de1265fd, type: 3}
       propertyPath: m_RootOrder
@@ -14278,9 +15202,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1413066595354350, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544341984015996, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_Name
       value: DesertChestComplete (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4234813111254052, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_RootOrder
@@ -14384,6 +15320,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_Name
       value: DesertRock02 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
@@ -14542,6 +15482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -14629,6 +15573,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_Name
       value: DesertRock02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f666b9d9c9ceca4e8da8117e06ec7be, type: 3}
       propertyPath: m_RootOrder
@@ -14971,6 +15919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock03
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc949c39139a9874a956eb6f3fd6504e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -15111,9 +16063,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 852734313}
     m_Modifications:
+    - target: {fileID: 1413066595354350, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544341984015996, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_Name
       value: DesertChestComplete
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4234813111254052, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_RootOrder
@@ -15427,9 +16391,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1004549442224060, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027205273449516, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1471701822128868, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
       propertyPath: m_Name
       value: DesertCastle_Red (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471701822128868, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1493802142030926, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730672883638634, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831761457673994, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4371177918587084, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
       propertyPath: m_RootOrder
@@ -15611,6 +16599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRock04
       objectReference: {fileID: 0}
+    - target: {fileID: 1397732506665660, guid: d77c2639e12a33b4b946e2cf7bd3adb7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4951918527361944, guid: d77c2639e12a33b4b946e2cf7bd3adb7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -15741,9 +16733,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823392189}
     m_Modifications:
+    - target: {fileID: 1004549442224060, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027205273449516, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1471701822128868, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
       propertyPath: m_Name
       value: DesertCastle_Red (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471701822128868, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1493802142030926, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730672883638634, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831761457673994, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4371177918587084, guid: 4fbe211c78217ba4787eeda865ce00e4, type: 3}
       propertyPath: m_RootOrder
