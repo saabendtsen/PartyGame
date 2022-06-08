@@ -47,12 +47,12 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     public void ApplyDamage(float damage) {
-        Debug.Log("Player take Damage");
+        //Debug.Log("Player take Damage");
         health -= damage;
         lerpTimer = 0f;
         if(health <= 0) {
             // KILL player object
-        Debug.Log("YOU DIED! NOOB");
+        //Debug.Log("YOU DIED! NOOB");
         }
     }
 

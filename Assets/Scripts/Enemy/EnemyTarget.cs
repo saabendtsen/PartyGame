@@ -6,6 +6,8 @@ public class EnemyTarget : MonoBehaviour
 {
 
     public float health = 100f;
+    public GameObject arena;
+    SpawnHandler spawner;
 
     public void ApplyDamage(float amount)
     {
@@ -18,14 +20,16 @@ public class EnemyTarget : MonoBehaviour
 
     void Die()
     {
+        arena.GetComponent<SpawnHandler>().EnemyKilled();
         Destroy(gameObject);
+    
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

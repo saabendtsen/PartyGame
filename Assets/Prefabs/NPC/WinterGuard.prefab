@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  arena: {fileID: 5579208468287754011, guid: 00dae9ddfb6c1da4886259b40b04e320, type: 3}
 --- !u!136 &-2457225534307820850
 CapsuleCollider:
   m_ObjectHideFlags: 0
