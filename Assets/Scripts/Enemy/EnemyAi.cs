@@ -34,7 +34,7 @@ public class EnemyAi : MonoBehaviour
     private Vector3 playerPosition;
 
     private State state;
-
+   
     private float attackTimer;
 
     public float attackRange;
@@ -169,10 +169,11 @@ public class EnemyAi : MonoBehaviour
 
     private void LookAtPlayer()
     {
-        Vector3 lookVector = playerPosition - transform.position;
-        lookVector.y = transform.position.y;
-        Quaternion rot = Quaternion.LookRotation(lookVector);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rot, 1);
+        Vector3 relativePos = playerObj.transform.position - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(relativePos);
+        Quaternion current = transform.localRotation;
+        transform.localRotation = Quaternion.Slerp(current, rotation, Time.deltaTime                              
+            * 5);
     }
 
     public void FriendlyFire()
