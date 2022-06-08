@@ -56,7 +56,7 @@ public class CustomBullet : MonoBehaviour
         
              if(enemies[i].gameObject.tag=="Enemy")
              {
-                enemies[i].GetComponent<EnemyTarget>().ApplyDamage(explosionDamage);
+                enemies[i].GetComponent<EnemyAi>().ApplyDamage(explosionDamage);
              }
 
              if(enemies[i].gameObject.tag=="Player")

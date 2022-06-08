@@ -20,7 +20,6 @@ private int activeEnermies;
        GameObject tmp = Instantiate(enemy);
        tmp.transform.position = new Vector3(0.0f, tmp.transform.position.y, 0.0f);
        col = terrain.GetComponent<BoxCollider>();
-       activeEnermies = 0;
     }
 
     // Update is called once per frame
@@ -48,6 +47,7 @@ private int activeEnermies;
     public void EnemyKilled()
     {
         activeEnermies--;
+        numberOfEnemies++;
         Debug.Log("enermy spawned: " + activeEnermies + "enermy max : " + numberOfEnemies);
     }
 

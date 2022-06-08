@@ -7,6 +7,8 @@ TagManager:
   - CinemachineTarget
   - Enemy
   - Grenade
+  - Health
+  - Ground
   layers:
   - Default
   - TransparentFX

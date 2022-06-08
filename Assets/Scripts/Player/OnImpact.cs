@@ -12,7 +12,7 @@ public class OnImpact : MonoBehaviour
     {
         if(collision.gameObject.tag=="Enemy")
         {
-            EnemyTarget target = collision.transform.gameObject.GetComponent<EnemyTarget>();
+            EnemyAi target = collision.transform.gameObject.GetComponent<EnemyAi>();
             target.ApplyDamage(damage);
         }
         else if(collision.gameObject.tag=="Player")

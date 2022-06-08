@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6661127813754028790}
   - component: {fileID: 1602017257647933091}
   - component: {fileID: -2062069547981761112}
-  - component: {fileID: 2553187140473763965}
   - component: {fileID: -2457225534307820850}
   m_Layer: 7
   m_Name: WinterGuard
@@ -96,7 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a6241a67cfef6342903308cecefe226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   rigidbody: {fileID: -2062069547981761112}
+  arena: {fileID: 4753875765022183261, guid: c1218e47c07e36f41bd7c845ce99805a, type: 3}
   projectileGun: {fileID: 3369096330298011682}
   attackRange: 15
   chaseRange: 30
@@ -117,20 +118,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &2553187140473763965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6661127813754028785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1bb0f5ff9bbf4e46862c507e8fa8d0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  arena: {fileID: 5579208468287754011, guid: 00dae9ddfb6c1da4886259b40b04e320, type: 3}
 --- !u!136 &-2457225534307820850
 CapsuleCollider:
   m_ObjectHideFlags: 0

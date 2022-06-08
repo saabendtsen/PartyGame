@@ -15,8 +15,12 @@ public class EnemyAi : MonoBehaviour
 
     private NavMeshAgent agent;
 
+    public float health = 100f;
+
     [SerializeField]
     public Rigidbody rigidbody;
+
+    private GameObject Ground;
 
     private Animator anim;
 
@@ -49,6 +53,10 @@ public class EnemyAi : MonoBehaviour
         if (playerObj == null)
         {
             playerObj = GameObject.Find("Player");
+        }
+        if (Ground == null)
+        {
+            Ground = GameObject.Find("Ground");
         }
 
         agent = GetComponent<NavMeshAgent>();
@@ -179,5 +187,20 @@ public class EnemyAi : MonoBehaviour
     public void FriendlyFire()
     {
         Debug.Log("Took dmg");
+    }
+
+    public void ApplyDamage(float amount)
+    {
+        health -= amount;
+        if(health <= 0)
+        {
+        Die();
+        }
+    }
+
+    void Die()
+    {
+        Ground.GetComponent<SpawnHandler>().EnemyKilled();
+        Destroy(gameObject);
     }
 }
