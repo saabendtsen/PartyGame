@@ -29,8 +29,6 @@ private int activeEnermies;
         {
             GenerateObject(enemy);
             activeEnermies++;
-            Debug.Log("enermy spawned" + activeEnermies + "enermy max : " + numberOfEnemies);
-
         }
     }
 
@@ -48,7 +46,6 @@ private int activeEnermies;
     {
         activeEnermies--;
         numberOfEnemies++;
-        Debug.Log("enermy spawned: " + activeEnermies + "enermy max : " + numberOfEnemies);
     }
 
      Vector3 GetRandomPoint()

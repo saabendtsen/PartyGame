@@ -191,6 +191,7 @@ public class EnemyAi : MonoBehaviour
 
     public void ApplyDamage(float amount)
     {
+        Debug.Log("Took dmg");
         health -= amount;
         if(health <= 0)
         {
