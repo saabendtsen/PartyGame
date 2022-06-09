@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class EnemyAi : MonoBehaviour
 {
-    private enum State
+    public enum State
     {
         Roaming,
         ChaseTarget,
