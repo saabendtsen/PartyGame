@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour {
     public float maxHealth = 100f;
     public float chipSpeed = 2f;
 
-    UiHandler uihandler;
+    public UiHandler uihandler;
 
     public Image frontHealthBar;
     public Image backHealthBar;
@@ -25,7 +25,7 @@ public class PlayerHealth : MonoBehaviour {
 
     public void UpdateHealthUI(){
         //debug health amount
-        // Debug.Log(health);
+        //Debug.Log(health);
         float fillF = frontHealthBar.fillAmount;
         float fillB = backHealthBar.fillAmount;
         float hFraction = health / maxHealth;
@@ -46,6 +46,9 @@ public class PlayerHealth : MonoBehaviour {
             percentComplete = percentComplete * percentComplete;
             frontHealthBar.fillAmount = Mathf.Lerp(fillF, backHealthBar.fillAmount, percentComplete);
         }
+        if(health == 0f){
+            uihandler.GetComponent<UiHandler>().Gameover();
+        }
     }
 
     public void ApplyDamage(float damage) {
@@ -63,9 +66,4 @@ public class PlayerHealth : MonoBehaviour {
         lerpTimer = 0f;
     }
 
-    public void OnDeath(){
-        if(health == 0f){
-            uihandler.Gameover();
-        }
-    }
 }

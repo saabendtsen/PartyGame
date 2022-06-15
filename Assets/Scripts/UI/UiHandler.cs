@@ -12,8 +12,13 @@ private GameObject playerObj = null;
     }
 
     public void Gameover(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    
+    public void Reload(){
+        SceneManager.LoadScene("Arena");
+    }
+    
 
     public void ExitGame() {
         Debug.Log("Exit Game!");

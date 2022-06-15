@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class SpawnHandler : MonoBehaviour
-{
+public class SpawnHandler : MonoBehaviour{
 
 public Text counterText;
 int kills;

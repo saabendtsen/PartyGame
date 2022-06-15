@@ -182,6 +182,7 @@ MonoBehaviour:
   health: 100
   maxHealth: 100
   chipSpeed: 2
+  uihandler: {fileID: 3513904928769238807, guid: 00efb94f621521a4989208c6b8238718, type: 3}
   frontHealthBar: {fileID: 0}
   backHealthBar: {fileID: 0}
 --- !u!1 &5717285100374720075
