@@ -31,8 +31,7 @@ private int activeEnermies;
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Active" + activeEnermies + "Number" + numberOfEnemies);
-        
+
        if(activeEnermies<numberOfEnemies)
         {
             GenerateObject(enemy);

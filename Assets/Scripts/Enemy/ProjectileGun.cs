@@ -30,8 +30,6 @@ public class ProjectileGun : MonoBehaviour
     //bools 
     bool shooting, readyToShoot, reloading;
 
-    //Reference 
-    public Transform attackPoint;
 
     //Recoil
     private float recoilForce = 2;
@@ -81,7 +79,7 @@ public class ProjectileGun : MonoBehaviour
     private void Shoot(Vector3 target)
     {
         readyToShoot = false;
-        Vector3 directionWithoutSpread = target - attackPoint.position;
+        Vector3 directionWithoutSpread = target - transform.position;
 
         //calc spread
         float x = Random.Range(-spread, spread);
@@ -90,7 +88,7 @@ public class ProjectileGun : MonoBehaviour
         //Calc dir with spread
         Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0);
 
-        GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
+        GameObject currentBullet = Instantiate(bullet, transform.position, Quaternion.identity);
 
         currentBullet.transform.forward = directionWithSpread.normalized;
 
@@ -100,11 +98,6 @@ public class ProjectileGun : MonoBehaviour
         //force to bullet
         currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
         //currentBullet.GetComponent<Rigidbody>().AddForce(target * shootForce,ForceMode.Impulse);
-
-        if (muzzelFlash != null)
-        {
-            Instantiate(muzzelFlash,attackPoint.position, Quaternion.identity);
-        }
 
 
         bulletsLeft--;
