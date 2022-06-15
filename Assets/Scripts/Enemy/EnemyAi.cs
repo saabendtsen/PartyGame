@@ -22,8 +22,6 @@ public class EnemyAi : MonoBehaviour
 
     private GameObject Ground;
 
-    private Animator anim;
-
     private GameObject playerObj = null;
 
     [SerializeField]
@@ -47,9 +45,12 @@ public class EnemyAi : MonoBehaviour
 
     public float stopChaseRange;
 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
+    
         if (playerObj == null)
         {
             playerObj = GameObject.Find("Player");
@@ -94,12 +95,21 @@ public class EnemyAi : MonoBehaviour
         {
             default:
             case State.Roaming:
+            anim.SetBool("roaming", true);
+            anim.SetBool("chase", false);
+            anim.SetBool("attack", false);
                 Roaming();
                 break;
             case State.ChaseTarget:
+            anim.SetBool("chase", true);
+            anim.SetBool("roaming", false);
+            anim.SetBool("attack", false);
                 agent.SetDestination(playerPosition);
                 break;
             case State.AttackPlayer:
+            anim.SetBool("attack", true);
+            anim.SetBool("roaming", false);
+            anim.SetBool("chase", false);
                 AttackPlayer();
                 break;
         }
