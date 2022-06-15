@@ -10,7 +10,7 @@ public class SpawnHandler : MonoBehaviour
 public Text counterText;
 int kills;
 
-//private EnemyAi enemyAi;
+public EnemyAi enemyAi;
 
 public GameObject enemy;
 
@@ -26,11 +26,14 @@ private int activeEnermies;
        GameObject tmp = Instantiate(enemy);
        tmp.transform.position = new Vector3(0.0f, tmp.transform.position.y, 0.0f);
        col = terrain.GetComponent<BoxCollider>();
+       activeEnermies++;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("Active" + activeEnermies + "Number" + numberOfEnemies);
+        
        if(activeEnermies<numberOfEnemies)
         {
             GenerateObject(enemy);
@@ -41,13 +44,18 @@ private int activeEnermies;
 
     void GenerateObject(GameObject go)
     {
-        if (go == null) return;        
-            GameObject tmp = Instantiate(go);
-        
+        if (go == null) return;  
+        GameObject tmp = Instantiate(go);      
+
+        if(kills >= 2)
+        {
+            tmp.GetComponent<EnemyAi>().addHealth();
+            Debug.Log(tmp.GetComponent<EnemyAi>().health);
+        }
             Vector3 randomPoint = GetRandomPoint();
             tmp.gameObject.transform.position = new Vector3(randomPoint.x, 
             tmp.transform.position.y, randomPoint.z);
-            //Debug.Log(enemyAi.health);
+    
     }
 
     public void EnemyKilled()
@@ -55,7 +63,7 @@ private int activeEnermies;
         activeEnermies--;
         numberOfEnemies++;
         kills++;
-        //enemyAi.health = 125;
+        
     }
 
     public void showKills()

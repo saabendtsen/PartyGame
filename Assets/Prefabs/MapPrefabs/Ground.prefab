@@ -46,7 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 650cb158eb59a4a4c8e8ddfd5b7c9461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 6661127813754028785, guid: 07528473ad4aaef4dafddfe98a52d67c, type: 3}
+  counterText: {fileID: 2794546877643859112, guid: 4810b9485ca96ba4bab4ab628b4ec070, type: 3}
+  enemyAi: {fileID: 4909437901099175983, guid: f44880c08091fd64c9f1e76a93bd0987, type: 3}
+  enemy: {fileID: 5251401759280789081, guid: f44880c08091fd64c9f1e76a93bd0987, type: 3}
   numberOfEnemies: 5
   terrain: {fileID: 4755178206131572104}
 --- !u!1001 &4753875764299011192
