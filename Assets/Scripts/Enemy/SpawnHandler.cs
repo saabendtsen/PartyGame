@@ -10,6 +10,8 @@ public class SpawnHandler : MonoBehaviour
 public Text counterText;
 int kills;
 
+//private EnemyAi enemyAi;
+
 public GameObject enemy;
 
 public int numberOfEnemies;
@@ -45,6 +47,7 @@ private int activeEnermies;
             Vector3 randomPoint = GetRandomPoint();
             tmp.gameObject.transform.position = new Vector3(randomPoint.x, 
             tmp.transform.position.y, randomPoint.z);
+            //Debug.Log(enemyAi.health);
     }
 
     public void EnemyKilled()
@@ -52,6 +55,7 @@ private int activeEnermies;
         activeEnermies--;
         numberOfEnemies++;
         kills++;
+        //enemyAi.health = 125;
     }
 
     public void showKills()

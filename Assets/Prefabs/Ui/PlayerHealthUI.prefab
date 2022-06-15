@@ -334,7 +334,7 @@ RectTransform:
   - {fileID: 553526866705518975}
   - {fileID: 553526866944402394}
   - {fileID: 553526866465563490}
-  - {fileID: 4455692762937765037}
+  - {fileID: 733652725606722797}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!1001 &1953987613883664390
+--- !u!1001 &3235357840368109638
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -445,7 +445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2794546877643859115, guid: 4810b9485ca96ba4bab4ab628b4ec070, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 118.6135
+      value: 94.4713
       objectReference: {fileID: 0}
     - target: {fileID: 2794546877643859115, guid: 4810b9485ca96ba4bab4ab628b4ec070, type: 3}
       propertyPath: m_SizeDelta.y
@@ -481,7 +481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2794546877643859115, guid: 4810b9485ca96ba4bab4ab628b4ec070, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 378
+      value: 383
       objectReference: {fileID: 0}
     - target: {fileID: 2794546877643859115, guid: 4810b9485ca96ba4bab4ab628b4ec070, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -501,8 +501,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4810b9485ca96ba4bab4ab628b4ec070, type: 3}
---- !u!224 &4455692762937765037 stripped
+--- !u!224 &733652725606722797 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2794546877643859115, guid: 4810b9485ca96ba4bab4ab628b4ec070, type: 3}
-  m_PrefabInstance: {fileID: 1953987613883664390}
+  m_PrefabInstance: {fileID: 3235357840368109638}
   m_PrefabAsset: {fileID: 0}
