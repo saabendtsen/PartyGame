@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireDamage : MonoBehaviour
 {
 
-    public float damage= 5f;
+    public float damage= 2f;
     public bool isInFire = false;
 
     private IEnumerator coroutine;
@@ -19,12 +19,13 @@ public class FireDamage : MonoBehaviour
             PlayerHealth playerTarget = collision.transform.gameObject.GetComponent<PlayerHealth>();
             playerTarget.ApplyDamage(damage);
             isInFire = true;
-            Debug.Log("Player enter fire");
+            
         }
         else if(collision.gameObject.tag=="Enemy")
         {
-            EnemyTarget target = collision.transform.gameObject.GetComponent<EnemyTarget>();
+            EnemyAi target = collision.transform.gameObject.GetComponent<EnemyAi>();
             target.ApplyDamage(damage);
+            isInFire = true;
         }
         
     }
@@ -45,7 +46,7 @@ public class FireDamage : MonoBehaviour
             {
                 coroutine = StayInFireDamage(2f);
                 StartCoroutine(coroutine);
-                EnemyTarget target = collision.transform.gameObject.GetComponent<EnemyTarget>();
+                EnemyAi target = collision.transform.gameObject.GetComponent<EnemyAi>();
                 target.ApplyDamage(damage);
                 isInFire = false;
            }
