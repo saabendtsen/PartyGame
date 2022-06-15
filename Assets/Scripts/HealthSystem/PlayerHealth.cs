@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour {
     public float maxHealth = 100f;
     public float chipSpeed = 2f;
 
+    UiHandler uihandler;
+
     public Image frontHealthBar;
     public Image backHealthBar;
 
@@ -59,5 +61,11 @@ public class PlayerHealth : MonoBehaviour {
     public void RestoreHealth(float healAmount){
         health += healAmount;
         lerpTimer = 0f;
+    }
+
+    public void OnDeath(){
+        if(health == 0f){
+            uihandler.Gameover();
+        }
     }
 }
