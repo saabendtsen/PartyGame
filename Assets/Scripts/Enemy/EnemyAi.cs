@@ -85,7 +85,7 @@ public class EnemyAi : MonoBehaviour
                 transform.position.z);
 
         //Set Enermy Speed
-        anim.SetFloat("Speed", agent.speed);
+        //anim.SetFloat("Speed", agent.speed);
 
         //Set chase or roam
         CheckDistanceToPlayer();
@@ -131,6 +131,11 @@ public class EnemyAi : MonoBehaviour
         if(agent)
         agent.SetDestination(targetDestination);
  
+    }
+
+    public void addHealth()
+    {
+        health = 125f;
     }
 
     private void AttackPlayer()
