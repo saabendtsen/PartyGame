@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class SpawnHandler : MonoBehaviour
 {
+
+public Text counterText;
+int kills;
 
 public GameObject enemy;
 
@@ -29,6 +33,7 @@ private int activeEnermies;
         {
             GenerateObject(enemy);
             activeEnermies++;
+            showKills();
         }
     }
 
@@ -46,6 +51,12 @@ private int activeEnermies;
     {
         activeEnermies--;
         numberOfEnemies++;
+        kills++;
+    }
+
+    public void showKills()
+    {
+        counterText.text = kills.ToString();
     }
 
      Vector3 GetRandomPoint()
