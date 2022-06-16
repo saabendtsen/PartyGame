@@ -49,7 +49,6 @@ private int activeEnermies;
         if(kills >= 2)
         {
             tmp.GetComponent<EnemyAi>().addHealth();
-            Debug.Log(tmp.GetComponent<EnemyAi>().health);
         }
             Vector3 randomPoint = GetRandomPoint();
             tmp.gameObject.transform.position = new Vector3(randomPoint.x, 
