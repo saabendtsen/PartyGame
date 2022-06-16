@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour {
 
     public Image frontHealthBar;
     public Image backHealthBar;
+    private bool gmod = false;
 
     void Start() {
         health = maxHealth;
@@ -20,7 +21,8 @@ public class PlayerHealth : MonoBehaviour {
 
     void Update() {
         health = Mathf.Clamp(health, 0, maxHealth);
-        UpdateHealthUI();   
+        UpdateHealthUI();
+        gmod = Godmode.godmode;
     }
 
     public void UpdateHealthUI(){
@@ -52,12 +54,14 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     public void ApplyDamage(float damage) {
+        if (!gmod){
         //Debug.Log("Player take Damage");
         health -= damage;
         lerpTimer = 0f;
-        if(health <= 0) {
-            // KILL player object
+            if(health <= 0) {
+        // KILL player object
         //Debug.Log("YOU DIED! NOOB");
+            }  
         }
     }
 

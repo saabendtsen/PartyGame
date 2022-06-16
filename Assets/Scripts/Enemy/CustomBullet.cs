@@ -43,7 +43,7 @@ public class CustomBullet : MonoBehaviour
 
         //count down lifetime
         maxLifetime -= Time.deltaTime;
-        if(maxLifetime <= 0) Explode();
+        if(maxLifetime <= 0) Explode(); 
     }
 
     private void Explode()
@@ -60,7 +60,6 @@ public class CustomBullet : MonoBehaviour
                 enemies[i].GetComponent<EnemyAi>().FriendlyFire(explosionForce,transform.position,explosionRange);
 
              }
-
              if(enemies[i].gameObject.tag=="Player")
              {
                  enemies[i].GetComponent<PlayerHealth>().ApplyDamage(explosionDamage);
