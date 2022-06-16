@@ -57,7 +57,6 @@ public class CustomBullet : MonoBehaviour
              if(enemies[i].gameObject.tag=="Enemy")
              {
                 enemies[i].GetComponent<EnemyAi>().ApplyDamage(explosionDamage);
-                //enemies[i].GetComponent<Rigidbody>().AddForce(0, 50.0f, 0, ForceMode.Impulse);
              }
 
              if(enemies[i].gameObject.tag=="Player")
