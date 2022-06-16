@@ -104,7 +104,7 @@ public class EnemyAi : MonoBehaviour
             anim.SetBool("chase", true);
             anim.SetBool("roaming", false);
             anim.SetBool("attack", false);
-                agent.SetDestination(playerPosition);
+               if(agent.enabled) agent.SetDestination(playerPosition);
                 break;
             case State.AttackPlayer:
             anim.SetBool("attack", true);
@@ -115,16 +115,14 @@ public class EnemyAi : MonoBehaviour
         }
         }
 
-         if(transform.position.y >4)
+        //if y is below 0 call Die()
+        if (transform.position.y < 0)
         {
-            isFlying = true;
+            Die();
         }
 
-        if(transform.position.y <3.7 && isFlying)
-        {
-            ResetAgent();
-        }
     }
+     
 
     private void ChasePlayer(){
         
@@ -219,19 +217,32 @@ public class EnemyAi : MonoBehaviour
 
         agent.enabled = false;
         rigidbody.isKinematic = false;
-        rigidbody.AddExplosionForce(explosionForce, explosionPosition, explosionRadius, 10.0F, ForceMode.Impulse);
+        rigidbody.AddExplosionForce(explosionForce, explosionPosition, explosionRadius, 1.5F, ForceMode.Impulse);
 
+      
+        //call SetIsFlying() after a delay
+        Invoke("SetIsFlying", 1.0f);
+    }
+
+    void SetIsFlying()
+    {
+        isFlying = true;
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {    
+        if (collision.gameObject.tag != "Wall" && isFlying)ResetAgent();
     }
 
     void ResetAgent()
     {
         agent.enabled = true;
         rigidbody.isKinematic = true;
+        isFlying = false;
     }
 
     public void ApplyDamage(float amount)
     {
-        Debug.Log("Took dmg");
         health -= amount;
         if(health <= 0)
         {
