@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class SpawnHandler : MonoBehaviour{
 
 public Text counterText;
+
 int kills;
 
 public EnemyAi enemyAi;
@@ -66,6 +67,9 @@ private int activeEnermies;
     public void showKills()
     {
         counterText.text = kills.ToString();
+        if(kills > int.Parse(PlayerPrefs.GetString("HighScore", "0"))) {   
+            PlayerPrefs.SetString("HighScore", kills.ToString());
+        }
     }
 
      Vector3 GetRandomPoint()
