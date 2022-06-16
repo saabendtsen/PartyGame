@@ -95,21 +95,15 @@ public class EnemyAi : MonoBehaviour
         {
             default:
             case State.Roaming:
-            anim.SetBool("roaming", true);
-            anim.SetBool("chase", false);
-            anim.SetBool("attack", false);
                 Roaming();
                 break;
             case State.ChaseTarget:
-            anim.SetBool("chase", true);
-            anim.SetBool("roaming", false);
-            anim.SetBool("attack", false);
                if(agent.enabled) agent.SetDestination(playerPosition);
+                anim.SetBool("chase", true);
+                anim.SetBool("roaming", false);
+                anim.SetBool("attack", false);
                 break;
             case State.AttackPlayer:
-            anim.SetBool("attack", true);
-            anim.SetBool("roaming", false);
-            anim.SetBool("chase", false);
                 AttackPlayer();
                 break;
         }
@@ -130,7 +124,7 @@ public class EnemyAi : MonoBehaviour
         {
             agent.SetDestination(playerPosition);
         }
-        if(Vector3.Distance(currentPosition, playerPosition)<attackRange)
+        if(Vector3.Distance(currentPosition, playerPosition)<attackRange) 
         {
             agent.SetDestination(currentPosition);
             LookAtPlayer();
@@ -139,6 +133,9 @@ public class EnemyAi : MonoBehaviour
 
     private void Roaming()
     {
+        anim.SetBool("roaming", true);
+        anim.SetBool("chase", false);
+        anim.SetBool("attack", false);
         if(agent.enabled)
         {
     
@@ -153,6 +150,7 @@ public class EnemyAi : MonoBehaviour
         if(agent)
         agent.SetDestination(targetDestination);
         }
+        
  
     }
 
@@ -166,6 +164,9 @@ public class EnemyAi : MonoBehaviour
         LookAtPlayer();
         projectileGun.MyInput(playerPosition);
         agent.SetDestination(currentPosition);
+        anim.SetBool("attack", true);
+        anim.SetBool("roaming", false);
+        anim.SetBool("chase", false);
     }
 
     private void FindNewTargetDestination()
@@ -208,8 +209,7 @@ public class EnemyAi : MonoBehaviour
         Vector3 relativePos = playerObj.transform.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(relativePos);
         Quaternion current = transform.localRotation;
-        transform.localRotation = Quaternion.Slerp(current, rotation, Time.deltaTime                              
-            * 5);
+        transform.localRotation = Quaternion.Slerp(current, rotation, Time.deltaTime * 5);
     }
 
     public void FriendlyFire(float explosionForce, Vector3 explosionPosition,float explosionRadius)

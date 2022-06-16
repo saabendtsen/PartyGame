@@ -14,7 +14,11 @@ public class UiHandler : MonoBehaviour {
     }
     
     public void Reload(){
-        SceneManager.LoadScene("Arena");
+        SceneManager.LoadScene(1);
+    }
+
+    public void Menu(){
+        SceneManager.LoadScene(0);
     }
     
     public void ExitGame() {

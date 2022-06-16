@@ -48,7 +48,7 @@ public class PlayerHealth : MonoBehaviour {
             percentComplete = percentComplete * percentComplete;
             frontHealthBar.fillAmount = Mathf.Lerp(fillF, backHealthBar.fillAmount, percentComplete);
         }
-        if(health == 0f){
+        if(health <= 0){
             uihandler.GetComponent<UiHandler>().Gameover();
         }
     }

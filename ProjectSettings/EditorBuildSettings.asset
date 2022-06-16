@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/UI MainMenu.unity
     guid: 93e5bb5233eb3d046a01f8145283a31e
   - enabled: 1
-    path: Assets/Prefabs/MapPrefabs/Arena.unity
+    path: Assets/Scenes/Arena.unity
     guid: 45a04d8addca55a41ad02617250fafc2
   - enabled: 1
     path: Assets/Scenes/UI Gameover.unity
