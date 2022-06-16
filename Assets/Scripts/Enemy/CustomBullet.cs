@@ -58,6 +58,7 @@ public class CustomBullet : MonoBehaviour
              {
                 enemies[i].GetComponent<EnemyAi>().ApplyDamage(explosionDamage);
                 enemies[i].GetComponent<EnemyAi>().FriendlyFire(explosionForce,transform.position,explosionRange);
+
              }
 
              if(enemies[i].gameObject.tag=="Player")

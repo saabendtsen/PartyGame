@@ -136,9 +136,9 @@ MonoBehaviour:
     m_Bits: 128
   bounciness: 0.63
   useGravity: 1
-  explosionDamage: 40
-  explosionRange: 2
-  explosionForce: 1000
+  explosionDamage: 25
+  explosionRange: 5
+  explosionForce: 2000
   maxCollisions: 3
   maxLifetime: 5
   explodeOnTouch: 1
