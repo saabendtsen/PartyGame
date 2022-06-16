@@ -17,6 +17,8 @@ public class EnemyAi : MonoBehaviour
 
     public float health = 100f;
 
+    private bool isFlying;
+
     [SerializeField]
     public Rigidbody rigidbody;
 
@@ -70,7 +72,7 @@ public class EnemyAi : MonoBehaviour
                 transform.position.z);
 
         agent.stoppingDistance = 2;
-    }
+            }
 
     // Update is called once per frame
     void Update()
@@ -85,12 +87,10 @@ public class EnemyAi : MonoBehaviour
                 transform.position.y,
                 transform.position.z);
 
-        //Set Enermy Speed
-        //anim.SetFloat("Speed", agent.speed);
-
         //Set chase or roam
+        if(agent.enabled)
+        {
         CheckDistanceToPlayer();
-
         switch (state)
         {
             default:
@@ -113,6 +113,17 @@ public class EnemyAi : MonoBehaviour
                 AttackPlayer();
                 break;
         }
+        }
+
+         if(transform.position.y >4)
+        {
+            isFlying = true;
+        }
+
+        if(transform.position.y <3.7 && isFlying)
+        {
+            ResetAgent();
+        }
     }
 
     private void ChasePlayer(){
@@ -130,6 +141,9 @@ public class EnemyAi : MonoBehaviour
 
     private void Roaming()
     {
+        if(agent.enabled)
+        {
+    
         if (Vector3.Distance(currentPosition, currentPosition) < 30)
         {
             agent.SetDestination (startPosition);
@@ -140,6 +154,7 @@ public class EnemyAi : MonoBehaviour
         }
         if(agent)
         agent.SetDestination(targetDestination);
+        }
  
     }
 
@@ -162,7 +177,7 @@ public class EnemyAi : MonoBehaviour
         Vector3 randomPoint =
             transform.position + UnityEngine.Random.insideUnitSphere * range;
         NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)
+        if (NavMesh.SamplePosition(randomPoint, out hit, 3.0f, NavMesh.AllAreas)
         )
         {
             targetDestination = hit.position;
@@ -199,9 +214,19 @@ public class EnemyAi : MonoBehaviour
             * 5);
     }
 
-    public void FriendlyFire()
+    public void FriendlyFire(float explosionForce, Vector3 explosionPosition,float explosionRadius)
     {
-        Debug.Log("Took dmg");
+
+        agent.enabled = false;
+        rigidbody.isKinematic = false;
+        rigidbody.AddExplosionForce(explosionForce, explosionPosition, explosionRadius, 10.0F, ForceMode.Impulse);
+
+    }
+
+    void ResetAgent()
+    {
+        agent.enabled = true;
+        rigidbody.isKinematic = true;
     }
 
     public void ApplyDamage(float amount)

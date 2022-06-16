@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class UiHandler : MonoBehaviour {
 
-private GameObject playerObj = null;
-
     public void PlayGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

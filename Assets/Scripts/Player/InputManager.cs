@@ -17,17 +17,17 @@ public class InputManager : MonoBehaviour {
         look = GetComponent<PlayerLook>();
         // hver gang vi kalder jump laver vi en callback til motor jump functionen
         onFoot.Jump.performed += ctx => motorics.Jump();
-
         onFoot.Crouch.performed += ctx => motorics.Crouch();
         onFoot.Sprint.performed += ctx => motorics.Sprint();
     }
 
     void FixedUpdate() {
         motorics.ProcessMovement(onFoot.Movement.ReadValue<Vector2>());
+        look.ProcessLook(onFoot.Look.ReadValue<Vector2>());
     }
 
     private void LateUpdate() {
-        look.ProcessLook(onFoot.Look.ReadValue<Vector2>());
+        //look.ProcessLook(onFoot.Look.ReadValue<Vector2>());
     }
 
     private void OnEnable() {

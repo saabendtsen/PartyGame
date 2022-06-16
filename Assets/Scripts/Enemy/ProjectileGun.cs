@@ -32,7 +32,7 @@ public class ProjectileGun : MonoBehaviour
 
 
     //Recoil
-    private float recoilForce = 2;
+    //private float recoilForce = 2;
 
 
     public bool allowInvoke = true;
