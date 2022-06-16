@@ -336,11 +336,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e9e256fc69143468673397bfa6595e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet: {fileID: 8097651628822330283, guid: 8e33dfa2bb00e66469fc1d03be39e134, type: 3}
-  cam: {fileID: 5717285100374720074}
+  Bullet: {fileID: 63977828605263110, guid: f5d5f2baa9d387043ad5e5c5090af003, type: 3}
   Force: 100
   timeBetweenShooting: 0.1
-  spread: 0
+  strayFactor: 0
 --- !u!1001 &7999495837246188853
 PrefabInstance:
   m_ObjectHideFlags: 0
