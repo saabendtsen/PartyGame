@@ -149,8 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 5717285100374720074}
-  xSensitivity: 30
-  ySensitivity: 30
+  speed: 5
 --- !u!54 &5717285099772721329
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -338,7 +337,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8097651628822330283, guid: 8e33dfa2bb00e66469fc1d03be39e134, type: 3}
-  Force: 4000
+  cam: {fileID: 5717285100374720074}
+  Force: 100
+  timeBetweenShooting: 0.1
+  spread: 0
 --- !u!1001 &7999495837246188853
 PrefabInstance:
   m_ObjectHideFlags: 0

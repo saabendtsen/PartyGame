@@ -6,30 +6,52 @@ public class FireObject : MonoBehaviour
 {
     
     public GameObject Bullet;
-    
-    public float Force = 2000f;
+
+    public float Force,timeBetweenShooting,strayFactor;
+
+    private bool allowInvoke,readyToShoot;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        allowInvoke = true;
+        readyToShoot = true;
+        strayFactor = 100.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if(Input.GetKey(KeyCode.Mouse0) && readyToShoot)
         {
-            GameObject BulletHolder;
-            BulletHolder = Instantiate(Bullet, transform.position, transform.rotation) as GameObject;
-            //BulletHolder.transform.Rotate(Vector3.left * 90);
+            Shoot();
+        }
+    }
 
+
+
+    void Shoot()
+    {
+            readyToShoot = false;
+            GameObject BulletHolder;       
+
+            BulletHolder = Instantiate(Bullet, transform.position, transform.rotation) as GameObject;
             Rigidbody Temporary_RigidBody;
             Temporary_RigidBody = BulletHolder.GetComponent<Rigidbody>();
 
-            Temporary_RigidBody.AddForce(transform.forward * Force);
-
+            Temporary_RigidBody.AddForce(transform.forward * Force, ForceMode.Impulse);
             Destroy(BulletHolder, 2.0f);
+            if (allowInvoke)
+        {
+            Invoke("ResetShot", timeBetweenShooting);
+            allowInvoke = false;
         }
+    }
+
+
+    private void ResetShot()
+    {
+        readyToShoot = true;
+        allowInvoke = true;
     }
 }
