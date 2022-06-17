@@ -86,7 +86,7 @@ public class EnemyAi : MonoBehaviour
             new Vector3(transform.position.x,
                 transform.position.y,
                 transform.position.z);
-
+        Debug.Log("Agent enabled?" + agent.enabled);
         //Set chase or roam
         if(agent.enabled)
         {
@@ -110,7 +110,7 @@ public class EnemyAi : MonoBehaviour
         }
 
         //if y is below 0 call Die()
-        if (transform.position.y < 0)
+        if (transform.position.y <= 0)
         {
             Die();
         }
