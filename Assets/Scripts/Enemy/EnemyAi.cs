@@ -49,10 +49,14 @@ public class EnemyAi : MonoBehaviour
 
     private Animator anim;
 
+    AudioSource audioData;
+
     // Start is called before the first frame update
     void Start()
     {
-    
+        
+        audioData = GetComponent<AudioSource>();
+
         if (playerObj == null)
         {
             playerObj = GameObject.Find("Player");
@@ -112,6 +116,7 @@ public class EnemyAi : MonoBehaviour
         //if y is below 0 call Die()
         if (transform.position.y <= 0)
         {
+            
             Die();
         }
 
@@ -244,8 +249,10 @@ public class EnemyAi : MonoBehaviour
     public void ApplyDamage(float amount)
     {
         health -= amount;
+        audioData.Play(0);
         if(health <= 0)
         {
+       
         Die();
         }
     }
