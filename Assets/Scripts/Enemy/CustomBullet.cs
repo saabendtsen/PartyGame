@@ -48,6 +48,7 @@ public class CustomBullet : MonoBehaviour
 
     private void Explode()
     {
+        
         if(explosion != null) Instantiate(explosion,transform.position, Quaternion.identity);
 
         //Check for enemy

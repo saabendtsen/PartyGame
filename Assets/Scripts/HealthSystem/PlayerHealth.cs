@@ -15,8 +15,11 @@ public class PlayerHealth : MonoBehaviour {
     public Image backHealthBar;
     private bool gmod = false;
 
+    AudioSource audioData;
+
     void Start() {
         health = maxHealth;
+        audioData = GetComponent<AudioSource>();
     }
 
     void Update() {
@@ -57,6 +60,7 @@ public class PlayerHealth : MonoBehaviour {
         if (!gmod){
         //Debug.Log("Player take Damage");
         health -= damage;
+        audioData.Play(0);
         lerpTimer = 0f;
             if(health <= 0) {
         // KILL player object
