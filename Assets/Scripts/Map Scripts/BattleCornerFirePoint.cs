@@ -35,7 +35,7 @@ public class BattleCornerFirePoint : MonoBehaviour
             timeToShoot = false;
             coroutine = timeToShooting(2f);
             StartCoroutine(coroutine);
-            Destroy(BulletHolder, 1f);
+            Destroy(BulletHolder, 0.4f);
         }
     }
 

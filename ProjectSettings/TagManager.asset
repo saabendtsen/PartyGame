@@ -9,6 +9,7 @@ TagManager:
   - Grenade
   - Health
   - Ground
+  - Wall
   layers:
   - Default
   - TransparentFX
