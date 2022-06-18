@@ -8,7 +8,7 @@ public class HealthPickup : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         PlayerHealth health = other.GetComponent<PlayerHealth>();
-        if (health.health < 100) {
+        if (health.health < 100f) {
             health.RestoreHealth(amount);
             Destroy(gameObject);
         }

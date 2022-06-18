@@ -20,7 +20,7 @@ public class EnemyAi : MonoBehaviour
     private bool isFlying;
 
     [SerializeField]
-    public Rigidbody rigidbody;
+    public new Rigidbody rigidbody;
 
     private GameObject Ground;
 
@@ -38,7 +38,7 @@ public class EnemyAi : MonoBehaviour
     private Vector3 playerPosition;
 
     private State state;
-   
+
     private float attackTimer;
 
     public float attackRange;
@@ -54,7 +54,7 @@ public class EnemyAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
         audioData = GetComponent<AudioSource>();
 
         if (playerObj == null)
@@ -76,7 +76,7 @@ public class EnemyAi : MonoBehaviour
                 transform.position.z);
 
         agent.stoppingDistance = 2;
-            }
+    }
 
     // Update is called once per frame
     void Update()
@@ -90,46 +90,47 @@ public class EnemyAi : MonoBehaviour
             new Vector3(transform.position.x,
                 transform.position.y,
                 transform.position.z);
-        Debug.Log("Agent enabled?" + agent.enabled);
+        //Debug.Log("Agent enabled?" + agent.enabled);
         //Set chase or roam
-        if(agent.enabled)
+        if (agent.enabled)
         {
-        CheckDistanceToPlayer();
-        switch (state)
-        {
-            default:
-            case State.Roaming:
-                Roaming();
-                break;
-            case State.ChaseTarget:
-               if(agent.enabled) agent.SetDestination(playerPosition);
-                anim.SetBool("chase", true);
-                anim.SetBool("roaming", false);
-                anim.SetBool("attack", false);
-                break;
-            case State.AttackPlayer:
-                AttackPlayer();
-                break;
-        }
+            CheckDistanceToPlayer();
+            switch (state)
+            {
+                default:
+                case State.Roaming:
+                    Roaming();
+                    break;
+                case State.ChaseTarget:
+                    if (agent.enabled) agent.SetDestination(playerPosition);
+                    anim.SetBool("chase", true);
+                    anim.SetBool("roaming", false);
+                    anim.SetBool("attack", false);
+                    break;
+                case State.AttackPlayer:
+                    AttackPlayer();
+                    break;
+            }
         }
 
         //if y is below 0 call Die()
         if (transform.position.y <= 0)
         {
-            
+
             Die();
         }
 
     }
-     
 
-    private void ChasePlayer(){
-        
-        if(Vector3.Distance(currentPosition, playerPosition)>attackRange)
+
+    private void ChasePlayer()
+    {
+
+        if (Vector3.Distance(currentPosition, playerPosition) > attackRange)
         {
             agent.SetDestination(playerPosition);
         }
-        if(Vector3.Distance(currentPosition, playerPosition)<attackRange) 
+        if (Vector3.Distance(currentPosition, playerPosition) < attackRange)
         {
             agent.SetDestination(currentPosition);
             LookAtPlayer();
@@ -141,22 +142,22 @@ public class EnemyAi : MonoBehaviour
         anim.SetBool("roaming", true);
         anim.SetBool("chase", false);
         anim.SetBool("attack", false);
-        if(agent.enabled)
+        if (agent.enabled)
         {
-    
-        if (Vector3.Distance(currentPosition, currentPosition) < 30)
-        {
-            agent.SetDestination (startPosition);
+
+            if (Vector3.Distance(currentPosition, currentPosition) < 30)
+            {
+                agent.SetDestination(startPosition);
+            }
+            if (agent.remainingDistance < agent.stoppingDistance)
+            {
+                FindNewTargetDestination();
+            }
+            if (agent)
+                agent.SetDestination(targetDestination);
         }
-        if (agent.remainingDistance < agent.stoppingDistance)
-        {
-            FindNewTargetDestination();
-        }
-        if(agent)
-        agent.SetDestination(targetDestination);
-        }
-        
- 
+
+
     }
 
     public void addHealth()
@@ -217,14 +218,14 @@ public class EnemyAi : MonoBehaviour
         transform.localRotation = Quaternion.Slerp(current, rotation, Time.deltaTime * 5);
     }
 
-    public void FriendlyFire(float explosionForce, Vector3 explosionPosition,float explosionRadius)
+    public void FriendlyFire(float explosionForce, Vector3 explosionPosition, float explosionRadius)
     {
 
         agent.enabled = false;
         rigidbody.isKinematic = false;
         rigidbody.AddExplosionForce(explosionForce, explosionPosition, explosionRadius, 1.5F, ForceMode.Impulse);
 
-      
+
         //call SetIsFlying() after a delay
         Invoke("SetIsFlying", 1.0f);
     }
@@ -235,8 +236,8 @@ public class EnemyAi : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision collision)
-    {    
-        if (collision.gameObject.tag != "Wall" && isFlying)ResetAgent();
+    {
+        if (collision.gameObject.tag != "Wall" && isFlying) ResetAgent();
     }
 
     void ResetAgent()
@@ -250,10 +251,10 @@ public class EnemyAi : MonoBehaviour
     {
         health -= amount;
         audioData.Play(0);
-        if(health <= 0)
+        if (health <= 0)
         {
-       
-        Die();
+
+            Die();
         }
     }
 

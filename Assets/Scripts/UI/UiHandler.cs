@@ -22,7 +22,7 @@ public class UiHandler : MonoBehaviour {
     }
     
     public void ExitGame() {
-        Debug.Log("Exit Game!");
+        //Debug.Log("Exit Game!");
         Application.Quit();
     }
 }
