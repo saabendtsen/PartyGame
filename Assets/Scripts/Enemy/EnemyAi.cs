@@ -51,6 +51,10 @@ public class EnemyAi : MonoBehaviour
 
     AudioSource audioData;
 
+    public GameObject blood;
+    public GameObject blood2;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -116,8 +120,8 @@ public class EnemyAi : MonoBehaviour
         //if y is below 0 call Die()
         if (transform.position.y <= 0)
         {
-
             Die();
+           
         }
 
     }
@@ -262,5 +266,10 @@ public class EnemyAi : MonoBehaviour
     {
         Ground.GetComponent<SpawnHandler>().EnemyKilled();
         Destroy(gameObject);
+        //instantiate blood effect
+        Vector3 bloodPosition = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+        Instantiate(blood, bloodPosition, Quaternion.identity);
+        Instantiate(blood2, bloodPosition, Quaternion.identity);
+
     }
 }

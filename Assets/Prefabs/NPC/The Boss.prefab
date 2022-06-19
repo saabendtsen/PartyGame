@@ -2147,6 +2147,8 @@ MonoBehaviour:
   attackRange: 25
   chaseRange: 50
   stopChaseRange: 60
+  blood: {fileID: 1000012909287652, guid: abb9f519b142e304d9c45b56afa768bc, type: 3}
+  blood2: {fileID: 1000010675638318, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
 --- !u!195 &4909437901099175978
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5717285099772721329}
   - component: {fileID: 5717285099772721334}
   - component: {fileID: 6944865352103131978}
+  - component: {fileID: 6753157652222058241}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -281,6 +282,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6753157652222058241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5717285099772721335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790804e595b04c24cb2be1a35ce46918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 5717285100374720085}
+  attackPoint: {fileID: 5175669010711180119}
+  objectToThrow: {fileID: 1582328031438314, guid: 28696168932540245af980f36ca35f45, type: 3}
+  totalThrows: 10
+  throwCooldown: 1
+  throwKey: 324
+  throwForce: 3000
+  throwUpwardForce: 10
 --- !u!1 &5717285100374720075
 GameObject:
   m_ObjectHideFlags: 0

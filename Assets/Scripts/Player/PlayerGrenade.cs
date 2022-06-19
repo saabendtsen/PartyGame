@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CustomBullet : MonoBehaviour
+public class PlayerGrenade : MonoBehaviour
 {
 
     public Rigidbody rb;
     public GameObject explosion;
-    public LayerMask whatIsPlayer;
     public LayerMask whatIsEnemy;
 
 
@@ -23,7 +22,6 @@ public class CustomBullet : MonoBehaviour
     public float explosionForce;
 
     //Lifetime
-    public int maxCollisions;
     public float maxLifetime;
     public bool explodeOnTouch = true;
 
@@ -38,8 +36,6 @@ public class CustomBullet : MonoBehaviour
 
     private void Update()
     {
-        //when to explode
-        if(collisions > maxCollisions) Explode();
 
         //count down lifetime
         maxLifetime -= Time.deltaTime;
@@ -57,13 +53,9 @@ public class CustomBullet : MonoBehaviour
         
              if(enemies[i].gameObject.tag=="Enemy")
              {
-                //enemies[i].GetComponent<EnemyAi>().ApplyDamage(explosionDamage);
+                enemies[i].GetComponent<EnemyAi>().ApplyDamage(explosionDamage);
                 enemies[i].GetComponent<EnemyAi>().FriendlyFire(explosionForce,transform.position,explosionRange);
 
-             }
-             if(enemies[i].gameObject.tag=="Player")
-             {
-                 enemies[i].GetComponent<PlayerHealth>().ApplyDamage(explosionDamage);
              }
         }
 
@@ -78,8 +70,6 @@ public class CustomBullet : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision) 
     {
-        collisions++;
-        if (collision.collider.CompareTag("Player") && explodeOnTouch)Explode();
         if (collision.collider.CompareTag("Enemy") && explodeOnTouch)Explode();  
     }
 
@@ -103,7 +93,7 @@ public class CustomBullet : MonoBehaviour
 
    private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position,explosionRange);
     }
 
