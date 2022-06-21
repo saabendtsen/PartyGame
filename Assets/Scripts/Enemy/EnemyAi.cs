@@ -162,12 +162,6 @@ public class EnemyAi : MonoBehaviour
         }
 
 
-    }
-
-    public void addHealth()
-    {
-        health = health + 25f;
-    }
 
     private void AttackPlayer()
     {
