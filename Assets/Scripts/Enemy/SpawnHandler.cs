@@ -46,14 +46,11 @@ private int activeEnermies;
         if (go == null) return;  
         GameObject tmp = Instantiate(go);      
 
-        if(kills >= 2)
-        {
-            tmp.GetComponent<EnemyAi>().addHealth();
-        }
+        
             Vector3 randomPoint = GetRandomPoint();
             tmp.gameObject.transform.position = new Vector3(randomPoint.x, 
             tmp.transform.position.y, randomPoint.z);
-    
+            
     }
 
     public void EnemyKilled()
