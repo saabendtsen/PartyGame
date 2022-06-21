@@ -160,7 +160,7 @@ public class EnemyAi : MonoBehaviour
             if (agent)
                 agent.SetDestination(targetDestination);
         }
-
+    }
 
 
     private void AttackPlayer()
@@ -267,3 +267,4 @@ public class EnemyAi : MonoBehaviour
 
     }
 }
+
