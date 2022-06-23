@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -425,7 +425,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+>>>>>>> a45d9f84cf248b3b4f615d00e636f923c971d27d
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1998745786
@@ -1603,6 +1607,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 680789206461286518, guid: c1f082ede5ffd8641b81728ef5a8e993, type: 3}
+      propertyPath: enemyAi
+      value: 
+      objectReference: {fileID: 4909437901099175983, guid: f44880c08091fd64c9f1e76a93bd0987, type: 3}
     - target: {fileID: 680789206461286518, guid: c1f082ede5ffd8641b81728ef5a8e993, type: 3}
       propertyPath: terrain
       value: 
