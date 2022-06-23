@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Random=UnityEngine.Random;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+
 
 
 public class SpawnHandler : MonoBehaviour{
@@ -23,21 +26,33 @@ private int activeEnermies;
     // Start is called before the first frame update
     void Start()
     {
-       GameObject tmp = Instantiate(enemy);
-       tmp.transform.position = new Vector3(0.0f, tmp.transform.position.y, 0.0f);
        col = terrain.GetComponent<BoxCollider>();
-       activeEnermies++;
+
+       for(int i= 0; i < numberOfEnemies; i++)
+        {
+            GenerateObject(enemy);
+            activeEnermies++;
+        }
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
+       if(activeEnermies==0)
+        {
+            NextWave();
+        }
+    }
 
-       if(activeEnermies<numberOfEnemies)
+    void NextWave()
+    {
+        numberOfEnemies = Convert.ToInt32(numberOfEnemies*1.3);
+        for(int i= 0; i < numberOfEnemies; i++)
         {
             GenerateObject(enemy);
             activeEnermies++;
-            showKills();
         }
     }
 
@@ -58,6 +73,7 @@ private int activeEnermies;
         activeEnermies--;
         numberOfEnemies++;
         kills++;
+        showKills();
         
     }
 

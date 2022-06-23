@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -356,39 +356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1753967303 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3679242738386036730, guid: c1f082ede5ffd8641b81728ef5a8e993, type: 3}
-  m_PrefabInstance: {fileID: 680789207090761579}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1753967305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753967303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0758056184a1e8541a0a4d37855020d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceSpeed: 8
-  bounceAmplitude: 0.19
-  rotationSpeed: 90
---- !u!114 &1753967306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753967303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bf56d8820e9fe549a0ded133e3c46fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amount: 50
 --- !u!1001 &1998745786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1197,6 +1164,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 680789206461286518, guid: c1f082ede5ffd8641b81728ef5a8e993, type: 3}
+      propertyPath: enemyAi
+      value: 
+      objectReference: {fileID: 4909437901099175983, guid: f44880c08091fd64c9f1e76a93bd0987, type: 3}
     - target: {fileID: 680789206461286518, guid: c1f082ede5ffd8641b81728ef5a8e993, type: 3}
       propertyPath: terrain
       value: 
