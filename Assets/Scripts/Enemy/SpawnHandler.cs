@@ -44,7 +44,7 @@ private int activeEnermies;
         aliveText.SetText(activeEnermies.ToString());
        if(activeEnermies==0)
         {
-            NextWave();
+            Invoke("NextWave",1f);
         }
     }
 
