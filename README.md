@@ -1,4 +1,4 @@
 # PartyGame
 
-Trello link: 
+Trello link:
 https://trello.com/b/H11oYALf/partygame

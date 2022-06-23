@@ -18,6 +18,7 @@ public class ThrowWeapon : MonoBehaviour
     public KeyCode throwKey = KeyCode.Mouse1;
     public float throwForce;
     public float throwUpwardForce;
+    public TextMeshProUGUI nadesleft;
 
     bool readyToThrow;
 
@@ -28,6 +29,7 @@ public class ThrowWeapon : MonoBehaviour
 
     private void Update()
     {
+        nadesleft.SetText(totalThrows.ToString());
         if(Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
         {
             Throw();
@@ -71,5 +73,9 @@ public class ThrowWeapon : MonoBehaviour
     private void ResetThrow()
     {
         readyToThrow = true;
+    }
+
+    public void NadePickup(int amount){
+        totalThrows += amount;
     }
 }

@@ -141,11 +141,11 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 40
+  orthographic size: 70
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: cbc580288e89baa4fa489e01cb3eed14, type: 2}
   m_TargetDisplay: 0
@@ -493,6 +493,7 @@ MonoBehaviour:
   throwKey: 324
   throwForce: 3000
   throwUpwardForce: 10
+  nadesleft: {fileID: 0}
 --- !u!1 &5717285100374720075
 GameObject:
   m_ObjectHideFlags: 0
