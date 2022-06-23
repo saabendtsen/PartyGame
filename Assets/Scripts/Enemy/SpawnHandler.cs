@@ -42,10 +42,6 @@ private int activeEnermies;
     void Update()
     {
         aliveText.SetText(activeEnermies.ToString());
-       if(activeEnermies==0)
-        {
-            Invoke("NextWave",1f);
-        }
     }
 
     void NextWave()
@@ -73,9 +69,13 @@ private int activeEnermies;
     public void EnemyKilled()
     {
         activeEnermies--;
-        numberOfEnemies++;
         kills++;
         showKills();
+
+        if (activeEnermies == 0)
+        {
+            Invoke("NextWave",1f);
+        }
         
     }
 
