@@ -9,27 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Script: {fileID: 0}
   m_Name: Readme
   m_EditorClassIdentifier: 
-  icon: {fileID: 2800000, guid: 44a17a5b205fcd349a24700e6f5615bd, type: 3}
-  title: Cool Creators
-  sections:
-  - heading: We are just cool that's all you need to know
-  - heading: Our Github
-    text: 
-    linkText: PartyGame
-    url: https://github.com/saabendtsen/PartyGame
-  - heading: Creators
-    text: 
-    linkText: Søren
-    url: https://github.com/saabendtsen
-  - heading:
-    text: 
-    linkText: Younes
-    url: https://github.com/younesk31
-  - heading:
-    text: 
-    linkText: August
-    url: https://github.com/Manniche1234
-  loadedLayout: 1

@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class SpawnHandler : MonoBehaviour{
 
-public Text counterText;
+public TextMeshProUGUI counterText;
+public TextMeshProUGUI aliveText;
 
 int kills;
 
@@ -32,7 +34,7 @@ private int activeEnermies;
     // Update is called once per frame
     void Update()
     {
-
+        aliveText.SetText(activeEnermies.ToString());
        if(activeEnermies<numberOfEnemies)
         {
             GenerateObject(enemy);
@@ -63,7 +65,7 @@ private int activeEnermies;
 
     public void showKills()
     {
-        counterText.text = kills.ToString();
+        counterText.SetText(kills.ToString());
         if(kills > int.Parse(PlayerPrefs.GetString("HighScore", "0"))) {   
             PlayerPrefs.SetString("HighScore", kills.ToString());
         }
