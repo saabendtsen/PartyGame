@@ -248,6 +248,7 @@ public class EnemyAi : MonoBehaviour
     public void ApplyDamage(float amount)
     {
         health -= amount;
+        audioData.Play(0);
         if (health <= 0)
         {
 
